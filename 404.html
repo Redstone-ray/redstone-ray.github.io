@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" data-theme="drained">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>404 — Richard Ding</title>
+  <meta name="description" content="This page doesn’t exist. The sumo robot pushed it out of the ring.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light dark">
+  <!-- GitHub Pages serves this file for any missing path, so every URL here is root-absolute. -->
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Jost:wght@300;400;500&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script>
+    (function () {
+      var d = document.documentElement, t = null;
+      d.classList.add('js');
+      try { t = localStorage.getItem('rd-theme'); } catch (e) {}
+      if (t !== 'filled' && t !== 'drained') {
+        t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'filled' : 'drained';
+      }
+      d.setAttribute('data-theme', t);
+      try { if (localStorage.getItem('rd-motion') === 'off') d.classList.add('motion-off'); } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hd" id="hd">
+    <a class="hd__name" href="/">Richard Ding</a>
+    <nav class="hd__nav" aria-label="Primary">
+      <ul class="hd__links">
+        <li><a href="/#work">work</a></li>
+        <li><a href="/#about">about</a></li>
+        <li><a href="/#toys">toys</a></li>
+        <li><a href="/#cv">cv</a></li>
+      </ul>
+      <button class="themebtn" type="button" aria-pressed="false" title="Liquafilm mode: fill the page with liquid">
+        <svg class="pane" viewBox="0 0 12 16" width="12" height="16" aria-hidden="true" focusable="false">
+          <rect class="pane__frame" x="1" y="1" width="10" height="14" rx="2"/>
+          <rect class="pane__fill" x="2.75" y="2.75" width="6.5" height="10.5" rx="0.75"/>
+        </svg>
+        <span class="themebtn__label">fill</span><span class="sr-only themebtn__sr"> the page with liquid (dark mode)</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main" class="nf">
+    <div class="wrap nf__grid">
+      <div class="nf__text">
+        <div class="label-row">
+          <p class="label-row__title">error</p>
+          <p class="label-row__aside">page not found</p>
+        </div>
+        <h1 class="nf__big">4<em>0</em>4</h1>
+        <p class="nf__line">You’ve been pushed out of the ring.</p>
+        <p class="nf__sub">Whatever lived at this address isn’t here any more. The prime suspect is still in the ring. Get your revenge, or head back.</p>
+        <div class="nf__actions">
+          <a class="nf__back" href="/#work">back to work <span aria-hidden="true">→</span></a>
+          <button class="goose-btn" type="button" data-goose>
+            <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M6.5 3.2c1.6 0 2.7 1.1 2.7 2.6 0 1-.5 1.7-1 2.5-.5.8-.6 1.4.2 2 1.3.9 3.6.4 5.7.9 2 .5 3 1.9 2.4 3.6-.8 2.1-3.6 2.9-6.6 2.6-3.3-.3-5.4-2-5.4-4.4 0-1.6 1-2.6 1.6-3.6.4-.7.3-1.3-.3-1.5-.6-.2-1.6.2-2.6.3.6-1.3 1.3-1.9 2-2.1-.1-1.6 1.2-2.9 1.3-2.9Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><circle cx="7" cy="5.4" r=".8" fill="currentColor"/></svg>
+            <span>release the goose</span>
+          </button>
+        </div>
+      </div>
+      <div class="nf__ring">
+        <div id="toy-sumo" class="toy__stage toy__stage--full"><p class="toy__ph">loading toy…</p></div>
+        <p class="nf__hint">Stay in the ring for 15 seconds. Mouse, touch or arrow keys.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="nf__ft">
+    <div class="wrap">
+      <p><a href="/">Richard Ding</a> · <a href="mailto:richard.ding@uwaterloo.ca">richard.ding@uwaterloo.ca</a></p>
+      <p>Fluids simulated, geese real.</p>
+    </div>
+  </footer>
+
+  <script defer src="/assets/js/fx/sumo.js"></script>
+  <script defer src="/assets/js/fx/goose.js"></script>
+  <script defer src="/assets/js/site.js"></script>
+</body>
+</html>

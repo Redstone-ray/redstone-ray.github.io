@@ -1,0 +1,3 @@
+.DS_Store
+# local Claude Code preview config, not part of the site
+.claude/

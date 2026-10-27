@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" shape-rendering="geometricPrecision" role="img">
+<title>Concept illustration: exploded view of the window screen, from the existing window through a thin liquid cavity to its frame, with pump, reservoir and sensors</title>
+<defs>
+<linearGradient id="liq" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcf6a"/><stop offset=".1" stop-color="#f6b146"/><stop offset="1" stop-color="#e8962c"/></linearGradient>
+<linearGradient id="liqv" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffcf6a"/><stop offset=".35" stop-color="#f6b146"/><stop offset="1" stop-color="#e8962c"/></linearGradient>
+<filter id="soft" x="-30%" y="-80%" width="160%" height="260%"><feGaussianBlur stdDeviation="7"/></filter>
+</defs>
+<style>.k{stroke:#121212;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.kn{fill:none;stroke:#121212;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.k2{fill:none;stroke:#121212;stroke-width:1;stroke-opacity:.45;stroke-linecap:round;stroke-linejoin:round}.hd{fill:none;stroke:#121212;stroke-width:1;stroke-opacity:.45;stroke-dasharray:5 4;stroke-linecap:round}.lb{font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;fill:#4b4b4b;letter-spacing:.08em;text-transform:uppercase;font-weight:500}.ld{fill:none;stroke:#4b4b4b;stroke-width:1;stroke-linecap:round;stroke-linejoin:round}.dot{fill:#4b4b4b}.mb{display:none}@media (max-width:760px){.dk{display:none}.mb{display:inline}.lb{font-size:40px;letter-spacing:.04em}}</style>
+<rect width="1600" height="1000" fill="#f4f2ee"/>
+<path d="M480.2 73 L940.9 339" class="hd"/>
+<path d="M168.4 649 L629.1 915" class="hd"/>
+<path d="M499.2 480 L525.2 495 L255 651 L229 636 Z" fill="#f7f4ee" class="k"/>
+<path d="M499.2 480 L525.2 495 L525.2 147 L499.2 132 Z" fill="#e6e0d6" class="k"/>
+<path d="M512.2 487.5 L242 643.5 L242 295.5 L512.2 139.5 Z" fill="#cfe3ea" fill-opacity=".45" class="k2"/>
+<g transform="matrix(0.866 -0.5 0 1.0 221.2 283.5)"><path d="M292 66 L166 282" stroke="#fff" stroke-opacity=".8" stroke-width="7" stroke-linecap="round"/><path d="M316 92 L244 216" stroke="#fff" stroke-opacity=".85" stroke-width="2" stroke-linecap="round"/><path d="M24 290 C110 262 160 280 220 268 S310 254 336 270" class="k2" stroke-opacity=".3"/></g>
+<path d="M546 507 L234.2 687 L234.2 291 L546 111 Z M525.2 495 L525.2 147 L255 303 L255 651 Z" fill="#f3efe8" fill-rule="evenodd" class="k"/>
+<path d="M520 96 L546 111 L234.2 291 L208.2 276 Z" fill="#f8f6f1" class="k"/>
+<path d="M208.2 672 L234.2 687 L234.2 291 L208.2 276 Z" fill="#ece7de" class="k"/>
+<path d="M655.1 570 L343.3 750 L343.3 354 L655.1 174 Z" fill="#cfe3ea" fill-opacity="0.3" class="k"/>
+<path d="M649.9 171 L655.1 174 L343.3 354 L338.1 351 Z" fill="#a9c6cf" fill-opacity=".55" class="k"/>
+<path d="M338.1 747 L343.3 750 L343.3 354 L338.1 351 Z" fill="#a9c6cf" fill-opacity=".4" class="k"/>
+<g transform="matrix(0.866 -0.5 0 1.0 343.3 354)"><path d="M292 40 L150 286" stroke="#fff" stroke-opacity=".75" stroke-width="7" stroke-linecap="round"/><path d="M318 66 L246 190" stroke="#fff" stroke-opacity=".8" stroke-width="2" stroke-linecap="round"/></g>
+<path d="M691.5 591 L700.1 596 L412.6 762 L404 757 Z" fill="#e7e3db" class="k"/>
+<path d="M691.5 591 L700.1 596 L700.1 228 L691.5 223 Z" fill="#cfc9bf" class="k"/>
+<path d="M700.1 596 L412.6 762 L412.6 541.2 L700.1 375.2 Z" fill="url(#liq)" fill-opacity=".92"/>
+<path d="M691.5 370.2 L700.1 375.2 L412.6 541.2 L404 536.2 Z" fill="#ffcf6a" stroke="#a35f06" stroke-width="1.5" stroke-linejoin="round"/>
+<g transform="matrix(0.866 -0.5 0 1.0 400.5 387)"><path d="M20 171.2 H340" stroke="#fff3c8" stroke-opacity=".7" stroke-width="2.5" stroke-linecap="round"/></g>
+<path d="M712.3 603 L400.5 783 L400.5 387 L712.3 207 Z M700.1 596 L700.1 228 L412.6 394 L412.6 762 Z" fill="#d9d4ca" fill-rule="evenodd" class="k"/>
+<path d="M703.6 202 L712.3 207 L400.5 387 L391.8 382 Z" fill="#ebe7e0" class="k"/>
+<path d="M391.8 778 L400.5 783 L400.5 387 L391.8 382 Z" fill="#ccc6bb" class="k"/>
+<g transform="matrix(0.866 -0.5 0 1.0 400.5 387)"><rect x="18" y="385" width="324" height="8" rx="4" fill="#e8962c" stroke="#a35f06" stroke-width="1"/><rect x="18" y="3" width="324" height="8" rx="4" fill="#f4f2ee" stroke="#121212" stroke-opacity=".45" stroke-width="1"/></g>
+<path d="M681.9 615.5 L681.9 645.5" stroke="#121212" stroke-width="16" stroke-linecap="round"/>
+<path d="M681.9 615.5 L681.9 645.5" stroke="#d9d4ca" stroke-width="13" stroke-linecap="round"/>
+<path d="M681.9 219.5 L681.9 195.5" stroke="#121212" stroke-width="16" stroke-linecap="round"/>
+<path d="M681.9 219.5 L681.9 195.5" stroke="#d9d4ca" stroke-width="13" stroke-linecap="round"/>
+<path d="M681.9 637.5 L681.9 651.5 Q681.9 665.5 694.1 672.5 L982.5 839 Q1005 852 1027.5 839 L1160 762.5" fill="none" stroke="#121212" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M681.9 637.5 L681.9 651.5 Q681.9 665.5 694.1 672.5 L982.5 839 Q1005 852 1027.5 839 L1160 762.5" fill="none" stroke="#f3e2c2" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M681.9 637.5 L681.9 651.5 Q681.9 665.5 694.1 672.5 L982.5 839 Q1005 852 1027.5 839 L1160 762.5" fill="none" stroke="#e8962c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".95"/>
+<path d="M681.9 637.5 L681.9 651.5 Q681.9 665.5 694.1 672.5 L982.5 839 Q1005 852 1027.5 839 L1160 762.5" fill="none" stroke="#ffcf6a" stroke-width="2.5" stroke-dasharray="6 14" stroke-linecap="round"/>
+<path d="M766 634 L454.2 814 L454.2 418 L766 238 Z" fill="#cfe3ea" fill-opacity="0.32" class="k"/>
+<path d="M760.8 235 L766 238 L454.2 418 L449 415 Z" fill="#a9c6cf" fill-opacity=".55" class="k"/>
+<path d="M449 811 L454.2 814 L454.2 418 L449 415 Z" fill="#a9c6cf" fill-opacity=".4" class="k"/>
+<g transform="matrix(0.866 -0.5 0 1.0 454.2 418)"><path d="M292 40 L150 286" stroke="#fff" stroke-opacity=".75" stroke-width="7" stroke-linecap="round"/><path d="M318 66 L246 190" stroke="#fff" stroke-opacity=".8" stroke-width="2" stroke-linecap="round"/></g>
+<path d="M849.1 682 L878.5 699 L622.2 847 L592.7 830 Z" fill="#f1efeb" class="k"/>
+<path d="M849.1 682 L878.5 699 L878.5 367 L849.1 350 Z" fill="#d1cdc5" class="k"/>
+<path d="M906.2 715 L594.5 895 L594.5 499 L906.2 319 Z M878.5 699 L878.5 367 L622.2 515 L622.2 847 Z" fill="#e4e1db" fill-rule="evenodd" class="k"/>
+<path d="M876.8 302 L906.2 319 L594.5 499 L565 482 Z" fill="#f6f5f2" class="k"/>
+<path d="M565 878 L594.5 895 L594.5 499 L565 482 Z" fill="#d6d2ca" class="k"/>
+<g transform="matrix(0.866 -0.5 0 1.0 594.5 499)"><rect x="16" y="16" width="328" height="364" fill="none" stroke="#121212" stroke-opacity=".3" stroke-width="1"/><path d="M0 0 L32 32 M360 0 L328 32 M0 396 L32 364 M360 396 L328 364" class="k2"/></g>
+<path d="M1269.1 559 V687 A56.3 32.5 0 0 0 1381.7 687 V559 A56.3 32.5 0 0 1 1269.1 559 Z" fill="#f8f6f1"/>
+<path d="M1269.1 617 V687 A56.3 32.5 0 0 0 1381.7 687 V617 A56.3 32.5 0 0 1 1269.1 617 Z" fill="url(#liqv)" fill-opacity=".92"/>
+<ellipse cx="1325.4" cy="617" rx="56.3" ry="32.5" fill="#ffcf6a" stroke="#a35f06" stroke-width="1.2"/>
+<path d="M1269.1 559 V687 A56.3 32.5 0 0 0 1381.7 687 V559" fill="#cfe3ea" fill-opacity=".2" class="k"/>
+<ellipse cx="1325.4" cy="559" rx="56.3" ry="32.5" fill="#cfe3ea" fill-opacity=".35" class="k"/>
+<path d="M1282.1 581 V685" stroke="#fff" stroke-opacity=".85" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M1117.6 787 L1204.2 837 L1204.2 745 L1117.6 695 Z" fill="#e2ddd3" class="k"/>
+<path d="M1204.2 645 L1290.8 695 L1204.2 745 L1117.6 695 Z" fill="#f3f0ea" class="k"/>
+<path d="M1290.8 787 L1204.2 837 L1204.2 745 L1290.8 695 Z" fill="#d8d2c7" class="k"/>
+<g transform="matrix(0.866 -0.5 0 1.0 1204.2 745)"><circle cx="50" cy="46" r="36" fill="#f6f3ee" class="k"/><path d="M20 0 V46 A30 30 0 0 0 80 46 V0" fill="none" stroke="#121212" stroke-width="11"/><path d="M20 0 V46 A30 30 0 0 0 80 46 V0" fill="none" stroke="#f3e2c2" stroke-width="8"/><path d="M20 0 V46 A30 30 0 0 0 80 46 V0" fill="none" stroke="#e8962c" stroke-width="4.5"/><path d="M50 46 L50 66" stroke="#121212" stroke-width="4" stroke-linecap="round"/><path d="M50 46 L32.7 36" stroke="#121212" stroke-width="4" stroke-linecap="round"/><path d="M50 46 L67.3 36" stroke="#121212" stroke-width="4" stroke-linecap="round"/><circle cx="50" cy="66" r="7" fill="#d9d4ca" class="k"/><circle cx="32.7" cy="36" r="7" fill="#d9d4ca" class="k"/><circle cx="67.3" cy="36" r="7" fill="#d9d4ca" class="k"/><circle cx="50" cy="46" r="5.5" fill="#f6f3ee" class="k"/></g>
+<path d="M1230.1 682 C1230.1 612 1317.4 477 1317.4 563" fill="none" stroke="#121212" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1230.1 682 C1230.1 612 1317.4 477 1317.4 563" fill="none" stroke="#f3e2c2" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1230.1 682 C1230.1 612 1317.4 477 1317.4 563" fill="none" stroke="#e8962c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".95"/>
+<ellipse cx="1230.1" cy="682" rx="10" ry="6" fill="#d9d4ca" class="k"/>
+<path d="M1108.9 386 L1134.9 401 L1134.9 321 L1108.9 306 Z" fill="#e2ddd3" class="k"/>
+<path d="M1212.8 246 L1238.8 261 L1134.9 321 L1108.9 306 Z" fill="#f3f0ea" class="k"/>
+<path d="M1238.8 341 L1134.9 401 L1134.9 321 L1238.8 261 Z" fill="#ebe7e0" class="k"/>
+<g transform="matrix(0.866 -0.5 0 1.0 1134.9 321)"><rect x="10" y="10" width="100" height="26" rx="3" fill="#121212" fill-opacity=".85"/><path d="M18 23 H44" stroke="#e8962c" stroke-width="3" stroke-linecap="round"/><circle cx="22" cy="56" r="5" fill="#e8962c"/><circle cx="40" cy="56" r="5" fill="#cfc9bf"/></g>
+<path d="M1151.3 296.5 V262.5 M1199.8 268.5 V250.5" class="kn"/>
+<circle cx="1151.3" cy="244.5" r="14" fill="#ffd36a" class="k"/><path d="M1170.3 244.5 L1176.3 244.5 M1164.8 257.9 L1169 262.2 M1151.3 263.5 L1151.3 269.5 M1137.9 257.9 L1133.7 262.2 M1132.3 244.5 L1126.3 244.5 M1137.9 231.1 L1133.7 226.8 M1151.3 225.5 L1151.3 219.5 M1164.8 231.1 L1169 226.8" class="kn"/>
+<path d="M1194.8 230.5 V186.5 A5 5 0 0 1 1204.8 186.5 V230.5 A10 10 0 1 1 1194.8 230.5 Z" fill="#f8f6f1" class="k"/><circle cx="1199.8" cy="238.5" r="6" fill="#e8962c"/><path d="M1199.8 234.5 V207.3" stroke="#e8962c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M1139.2 383.5 C1139.2 473.5 1218.2 570 1178.2 690" class="hd"/>
+<text x="128" y="168" text-anchor="start" class="lb dk" font-size="21">EXISTING WINDOW</text>
+<path d="M140 182 L196 182 L293.1 269" class="ld dk"/><circle cx="293.1" cy="269" r="3.6" class="dot dk"/>
+<text x="96" y="86" text-anchor="start" class="lb mb" font-size="21">EXISTING WINDOW</text>
+<path d="M108 104 L200 104 L293.1 269" class="ld mb"/><circle cx="293.1" cy="269" r="3.6" class="dot mb"/>
+<text x="716" y="128" text-anchor="start" class="lb dk" font-size="21">THIN CAVITY</text>
+<path d="M728 142 L790 142 L656.8 400.2" class="ld dk"/><circle cx="656.8" cy="400.2" r="3.6" class="dot dk"/>
+<text x="640" y="118" text-anchor="start" class="lb mb" font-size="21">THIN CAVITY</text>
+<path d="M652 136 L760 136 L656.8 400.2" class="ld mb"/><circle cx="656.8" cy="400.2" r="3.6" class="dot mb"/>
+<text x="860" y="908" text-anchor="start" class="lb dk" font-size="21">FILL / DRAIN</text>
+<path d="M872 880 L872 862 L940.9 815" class="ld dk"/><circle cx="940.9" cy="815" r="3.6" class="dot dk"/>
+<text x="690" y="930" text-anchor="start" class="lb mb" font-size="21">FILL / DRAIN</text>
+<path d="M702 888 L702 870 L940.9 815" class="ld mb"/><circle cx="940.9" cy="815" r="3.6" class="dot mb"/>
+<text x="1472" y="908" text-anchor="end" class="lb dk" font-size="21">PUMP + RESERVOIR</text>
+<path d="M1458 880 L1458 860 L1256.1 797" class="ld dk"/><circle cx="1256.1" cy="797" r="3.6" class="dot dk"/>
+<text x="1520" y="930" text-anchor="end" class="lb mb" font-size="21">PUMP + RESERVOIR</text>
+<path d="M1458 888 L1458 866 L1256.1 797" class="ld mb"/><circle cx="1256.1" cy="797" r="3.6" class="dot mb"/>
+<text x="1472" y="112" text-anchor="end" class="lb dk" font-size="21">LIGHT + TEMPERATURE SENSORS</text>
+<path d="M1300 126 L1300 140 L1169.3 230.5" class="ld dk"/><circle cx="1169.3" cy="230.5" r="3.6" class="dot dk"/>
+<text x="1520" y="82" text-anchor="end" class="lb mb" font-size="21">LIGHT + TEMPERATURE</text>
+<text x="1520" y="128" text-anchor="end" class="lb mb" font-size="21">SENSORS</text>
+<path d="M1300 142 L1300 156 L1169.3 230.5" class="ld mb"/><circle cx="1169.3" cy="230.5" r="3.6" class="dot mb"/>
+</svg>

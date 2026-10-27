@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 520" width="1800" height="520" shape-rendering="geometricPrecision" role="img" aria-labelledby="t d">
+<title id="t">Mix to quench, for scale</title>
+<desc id="d">A linear time axis from 0 to 300 milliseconds. The plunger’s whole job, from MIX at t = 0 to QUENCH, is a sliver under 10 ms at the far left. Further along: a blink, about 100–150 ms, and you pressing a button, about 250 ms; by then the crystal is long frozen.</desc>
+<defs><linearGradient id="amb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffcf6a"/><stop offset="1" stop-color="#e8962c"/></linearGradient><linearGradient id="pl" gradientUnits="userSpaceOnUse" x1="190" y1="0" x2="235" y2="0"><stop offset="0" stop-color="#e8962c"/><stop offset=".5" stop-color="#ffcf6a"/><stop offset="1" stop-color="#8f86e8"/></linearGradient><linearGradient id="frz" gradientUnits="userSpaceOnUse" x1="235" y1="0" x2="1540" y2="0"><stop offset="0" stop-color="#8f86e8" stop-opacity=".9"/><stop offset="1" stop-color="#8f86e8" stop-opacity=".25"/></linearGradient><pattern id="hatch" patternUnits="userSpaceOnUse" width="9" height="9" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="9" stroke="#121212" stroke-width="1" stroke-opacity=".14"/></pattern><marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M1.5 1.5L10.5 6L1.5 10.5" fill="none" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="0" y="0" width="1800" height="520" fill="#f4f2ee"/>
+<rect x="640" y="266" width="225" height="74" fill="url(#hatch)"/>
+<rect x="640" y="266" width="225" height="74" fill="#121212" fill-opacity="0.03"/>
+<path d="M640 340V266H865V340" fill="none" stroke="#121212" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M722.5 296Q752.5 316 782.5 296" fill="none" stroke="#121212" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M733.9 302l-3.7 8M745.9 305.3l-1.3 8M759.1 305.3l1.3 8M771.1 302l3.7 8" fill="none" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="640" y1="266" x2="640" y2="112" stroke="#121212" stroke-width="1" stroke-opacity="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="656" y="132" font-family="ui-monospace, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="23" letter-spacing=".08em" fill="#4b4b4b">BLINK</text>
+<text x="656" y="178" font-family="ui-monospace, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="36" letter-spacing=".04em" fill="#121212">≈ 100–150 ms</text>
+<path d="M235 340v6M280 340v6M325 340v6M370 340v6M460 340v6M505 340v6M550 340v6M595 340v6M685 340v6M730 340v6M775 340v6M820 340v6M910 340v6M955 340v6M1000 340v6M1045 340v6M1135 340v6M1180 340v6M1225 340v6M1270 340v6M1360 340v6M1405 340v6M1450 340v6M1495 340v6" stroke="#121212" stroke-width="1" stroke-opacity="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M415 340v12M640 340v12M865 340v12M1090 340v12M1315 340v12" stroke="#121212" stroke-width="1" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="190" y1="340" x2="1566" y2="340" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="640" y="384" font-family="ui-monospace, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="22" letter-spacing=".08em" fill="#8a8a8a" text-anchor="middle">100</text>
+<text x="1090" y="384" font-family="ui-monospace, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="22" letter-spacing=".08em" fill="#8a8a8a" text-anchor="middle">200</text>
+<text x="1540" y="384" font-family="ui-monospace, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="22" letter-spacing=".08em" fill="#8a8a8a" text-anchor="middle">300 ms</text>
+<line x1="235" y1="347" x2="1540" y2="347" stroke="url(#frz)" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 7"/>
+<rect x="190" y="335" width="45" height="10" rx="5" fill="url(#pl)"/>
+<path d="M190 306c-5.5 7.4 -8.6 11 -8.6 15a8.6 8.6 0 0 0 17.2 0c0 -4 -3.1 -7.6 -8.6 -15z" fill="url(#amb)" stroke="#a35f06" stroke-width="1.2" stroke-opacity="0.75"/>
+<line x1="190" y1="350" x2="190" y2="406" stroke="#121212" stroke-width="1" stroke-opacity="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="190" cy="340" r="3.2" fill="#121212"/>
+<text x="204" y="400" font-family="ui-monospace, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="23" letter-spacing=".08em" fill="#4b4b4b">MIX</text>
+<text x="204" y="430" font-family="ui-monospace, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="22" letter-spacing=".08em" fill="#8a8a8a">t = 0</text>
+<path d="M235 312L235 300M238.1 302.5L235 305.6L231.9 302.5M235 312L245.4 306M244.8 309.9L240.5 308.8L241.7 304.5M235 312L245.4 318M241.7 319.5L240.5 315.2L244.8 314.1M235 312L235 324M231.9 321.5L235 318.4L238.1 321.5M235 312L224.6 318M225.2 314.1L229.5 315.2L228.3 319.5M235 312L224.6 306M228.3 304.5L229.5 308.8L225.2 309.9" fill="none" stroke="#8f86e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="235" y1="294" x2="235" y2="112" stroke="#121212" stroke-width="1" stroke-opacity="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="235" cy="340" r="3.2" fill="#121212"/>
+<text x="251" y="132" font-family="ui-monospace, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="23" letter-spacing=".08em" fill="#4b4b4b">QUENCH</text>
+<text x="251" y="178" font-family="ui-monospace, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="36" letter-spacing=".04em" fill="#121212">&lt; 10 ms</text>
+<text x="251" y="212" font-family="ui-monospace, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="22" letter-spacing=".08em" fill="#8a8a8a">THE PLUNGER</text>
+<rect x="1293" y="326" width="44" height="14" rx="2" fill="#fbfaf7" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1300 326c0 -7 30 -7 30 0" fill="#fbfaf7" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="rotate(-18 1313 320)"><path d="M1303 238V310a10 10 0 0 0 20 0V238Z" fill="#fbfaf7"/><path d="M1303 238V310a10 10 0 0 0 20 0V238" fill="none" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M1323 314v-15a5 5 0 0 0 -6 -1.5v15" fill="none" stroke="#121212" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M1303 282q7 3 12 0M1303 276q6 2.5 10 0M1303 250q7 3 12 0" fill="none" stroke="#121212" stroke-width="1" stroke-opacity="0.55" stroke-linecap="round" stroke-linejoin="round"/></g>
+<path d="M1281 314l-8 -6M1279 326h-10M1349 314l8 -6M1351 326h10" fill="none" stroke="#121212" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7"/>
+<line x1="1327" y1="270" x2="1327" y2="112" stroke="#121212" stroke-width="1" stroke-opacity="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1315" cy="340" r="3.2" fill="#121212"/>
+<text x="1343" y="132" font-family="ui-monospace, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="23" letter-spacing=".08em" fill="#4b4b4b">YOU, PRESSING A BUTTON</text>
+<text x="1343" y="178" font-family="ui-monospace, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="36" letter-spacing=".04em" fill="#121212">≈ 250 ms</text>
+<text x="1331" y="430" font-family="ui-monospace, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="22" letter-spacing=".08em" fill="#8a8a8a">BY THEN, LONG FROZEN.</text>
+<line x1="1315" y1="350" x2="1315" y2="436" stroke="#121212" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 4"/>
+</svg>

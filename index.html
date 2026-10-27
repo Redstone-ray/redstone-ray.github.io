@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en" data-theme="drained">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Richard Ding — mechatronics, fluids, rockets</title>
+  <meta name="description" content="Richard Ding builds hardware that moves fluids, light and rockets, and the control systems that keep it all in line. Mechatronics Engineering at the University of Waterloo; Research Fellow in the Aizenberg Lab at Harvard SEAS.">
+  <meta name="author" content="Richard Ding">
+  <meta name="theme-color" content="#050403">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Canonical URL: change it (and the absolute URLs below) if you move to a custom domain. -->
+  <link rel="canonical" href="https://redstone-ray.github.io/">
+
+  <!-- Open Graph / Twitter. Social scrapers need absolute URLs: update the host if you move to a custom domain. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Richard Ding">
+  <meta property="og:title" content="Richard Ding — mechatronics, fluids, rockets">
+  <meta property="og:description" content="Instruments, controllers and machines that move liquid, light and the occasional rocket.">
+  <meta property="og:url" content="https://redstone-ray.github.io/">
+  <meta property="og:image" content="https://redstone-ray.github.io/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="Richard Ding: I build machines that move liquid, light and the occasional rocket. Beside the words, a glowing amber fluid flower from a simulation.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Richard Ding — mechatronics, fluids, rockets">
+  <meta name="twitter:description" content="Instruments, controllers and machines that move liquid, light and the occasional rocket.">
+  <meta name="twitter:image" content="https://redstone-ray.github.io/assets/og.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Jost:wght@300;400;500&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+
+  <!-- Theme before first paint: stored choice, else the system preference. -->
+  <script>
+    (function () {
+      var d = document.documentElement, t = null;
+      d.classList.add('js');
+      try { t = localStorage.getItem('rd-theme'); } catch (e) {}
+      if (t !== 'filled' && t !== 'drained') {
+        t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'filled' : 'drained';
+      }
+      d.setAttribute('data-theme', t);
+      try { if (localStorage.getItem('rd-motion') === 'off') d.classList.add('motion-off'); } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Richard Ding",
+    "url": "https://redstone-ray.github.io/",
+    "email": "mailto:richard.ding@uwaterloo.ca",
+    "jobTitle": "Research Fellow",
+    "description": "Mechatronics Engineering student at the University of Waterloo and Research Fellow in the Aizenberg Lab at Harvard SEAS.",
+    "affiliation": [
+      { "@type": "Organization", "name": "Aizenberg Lab, Harvard SEAS", "url": "https://aizenberglab.seas.harvard.edu/" },
+      { "@type": "CollegeOrUniversity", "name": "University of Waterloo" }
+    ],
+    "sameAs": [
+      "https://github.com/Redstone-ray",
+      "https://www.linkedin.com/in/richard-ding-40b59017a/",
+      "https://aizenberglab.seas.harvard.edu/people/richard-ding"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#work">Skip to work</a>
+
+  <header class="hd is-hero" id="hd">
+    <a class="hd__name" href="#top">Richard Ding</a>
+    <nav class="hd__nav" aria-label="Primary">
+      <ul class="hd__links">
+        <li><a href="#work">work</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#toys">toys</a></li>
+        <li><a href="#cv">cv</a></li>
+      </ul>
+      <button class="themebtn" type="button" aria-pressed="false" title="Liquafilm mode: fill the page with liquid">
+        <svg class="pane" viewBox="0 0 12 16" width="12" height="16" aria-hidden="true" focusable="false">
+          <rect class="pane__frame" x="1" y="1" width="10" height="14" rx="2"/>
+          <rect class="pane__fill" x="2.75" y="2.75" width="6.5" height="10.5" rx="0.75"/>
+        </svg>
+        <span class="themebtn__label">fill</span><span class="sr-only themebtn__sr"> the page with liquid (dark mode)</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ───────────── Hero ───────────── -->
+    <section id="top" class="hero on-dark" aria-label="Introduction">
+      <div id="hero-fx" class="hero__fx"></div>
+      <div class="hero__inner wrap">
+        <div class="hero__text">
+          <p class="hero__eyebrow" id="hero-eyebrow"><span class="seg">Mechatronics Engineering, University of Waterloo</span><span class="sep" aria-hidden="true">·</span><wbr><span class="seg">Research Fellow, Harvard SEAS</span></p>
+          <h1 class="hero__title" data-bind-html="hero.headline">I build instruments, controllers and machines that move <em>liquid</em>, <em>light</em> and the occasional <em>rocket</em>.</h1>
+        </div>
+        <p class="hero__hint"><span class="hero__dot" aria-hidden="true"></span><span data-bind="hero.hint">Press and hold anywhere to grow a fluid flower. It’s what I study.</span></p>
+      </div>
+      <a class="hero__cue" href="#work" aria-label="Scroll to selected work"><span class="hero__cue-line" aria-hidden="true"></span></a>
+      <button class="hero__pause" type="button" hidden>pause motion</button>
+    </section>
+
+    <!-- ───────────── Work ───────────── -->
+    <section id="work" class="section work" aria-labelledby="work-label">
+      <div class="wrap">
+        <div class="label-row">
+          <h2 class="label-row__title" id="work-label">selected work</h2>
+          <span class="label-row__aside" id="work-count">(12)</span>
+        </div>
+        <div class="grid" id="grid"></div>
+        <noscript>
+          <ol class="nojs-list">
+            <li><strong>Viscous fingering</strong>: Fluid flowers, grown by pushing one liquid into a thicker one between two sheets of glass.</li>
+            <li><strong>Liquafilm</strong>: A window screen that fills with liquid to dim the sun, then drains clear again.</li>
+            <li><strong>Compression sleeve</strong>: A soft sleeve that squeezes a swollen arm in rhythm, and measures it while it works.</li>
+            <li><strong>Gravity-drop mix-and-quench plunger</strong>: A falling plunger that freezes protein crystals less than 10 milliseconds after mixing.</li>
+            <li><strong>Waterloo Rocketry: canards and airbrakes</strong>: Fins that keep a student rocket from spinning, and brakes that stop it at the right height.</li>
+            <li><strong>Nightline</strong>: Two bedside lamps: press one, and the other, far away, starts to glow.</li>
+            <li><strong>Smart sensing ball joint</strong>: A car suspension joint that can tell you its own angle, ride height and wear.</li>
+            <li><strong>Ball balancers</strong>: Machines that tilt to keep a ball exactly where you tell it to.</li>
+            <li><strong>Aroma</strong>: A diffuser that picks a scent to match the song you’re playing.</li>
+            <li><strong>Sumo robot</strong>: A pink, duct-taped robot that shoves other robots out of the ring.</li>
+            <li><strong>TurtleBot navigation labs</strong>: Robots that drive around a pretend warehouse and stop at stop signs.</li>
+            <li><strong>The Goosenator</strong>: A robot that sorts goose eggs by colour, for a campus full of geese.</li>
+          </ol>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ───────────── About ───────────── -->
+    <section id="about" class="section about" aria-labelledby="about-label">
+      <div class="wrap">
+        <div class="label-row">
+          <h2 class="label-row__title" id="about-label">about</h2>
+          <span class="label-row__aside" data-bind="location">Cambridge, MA · Waterloo, ON</span>
+        </div>
+        <div class="about__grid">
+          <div class="about__side">
+            <figure id="portrait" class="portrait" data-src="assets/media/about/portrait.webp" data-alt="Portrait of Richard Ding">
+              <img src="assets/media/about/portrait.webp" srcset="assets/media/about/portrait-sm.webp 530w, assets/media/about/portrait.webp 883w" sizes="(min-width: 900px) 34vw, (min-width: 600px) 420px, 100vw" width="883" height="1200" alt="Portrait of Richard Ding" loading="lazy" decoding="async">
+            </figure>
+            <p class="portrait__cap"><span class="when-hover">hover for thermal view</span><span class="when-touch">tap for thermal view</span></p>
+          </div>
+
+          <div class="about__text">
+            <div class="about__copy" id="about-copy">
+              <p class="about__lede">I build hardware that moves fluids, light and rockets, and the control systems that keep it all in line.</p>
+              <p>I study Mechatronics Engineering at the University of Waterloo, and right now I’m a Research Fellow in <a href="https://aizenberglab.seas.harvard.edu/" target="_blank" rel="noopener">Joanna Aizenberg’s lab<span class="sr-only"> (opens in new tab)</span></a> at Harvard SEAS, where I make liquid-filled windows that tune sunlight and heat, and grow fluid flowers between sheets of glass.</p>
+              <p>Before that I rebuilt a gravity-drop plunger at Cornell that freezes protein crystals within 10 ms of mixing, prototyped a car ball joint at Musashi that senses its own wear, and led the controls team behind the canards and airbrakes on Waterloo Rocketry’s liquid-fuelled rockets.</p>
+              <p>When a lab is missing a tool, I usually end up building it.</p>
+            </div>
+
+            <div class="degree" id="degree" hidden>
+              <div class="degree__top">
+                <p class="degree__label"><span class="degree__name">Mechatronics engineer</span> <span class="degree__almost">(almost)</span></p>
+                <p class="degree__pct"><span class="degree__num">0</span>%</p>
+              </div>
+              <div class="degree__track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Degree progress">
+                <span class="degree__fill"></span>
+                <span class="degree__bead" aria-hidden="true"></span>
+              </div>
+              <div class="degree__ends"><span class="degree__start"></span><span class="degree__end"></span></div>
+            </div>
+
+            <dl class="facts" id="facts"></dl>
+
+            <figure class="reel">
+              <div class="reel__frame">
+                <video class="reel__video" muted loop playsinline preload="none" poster="assets/media/about/reel-poster.webp" aria-label="A short loop: a red and white printed airbrake mechanism, a rocket canard turning on the test bench, then a drill machining an aluminium part">
+                  <source src="assets/media/about/reel.mp4" type="video/mp4">
+                </video>
+              </div>
+              <figcaption>a normal week, sped up</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Toys ───────────── -->
+    <section id="toys" class="section toys" aria-labelledby="toys-label">
+      <div class="wrap">
+        <div class="label-row">
+          <h2 class="label-row__title" id="toys-label">toys</h2>
+          <span class="label-row__aside">(3)</span>
+        </div>
+        <p class="toys__intro">Small things built out of my projects. Mildly educational.</p>
+        <div class="toys__grid">
+          <article class="toy" aria-labelledby="toy-rocket-title">
+            <div class="toy__head">
+              <h3 class="toy__title" id="toy-rocket-title">Hit the apogee</h3>
+              <p class="toy__desc">Hold to open the airbrakes. Stop the rocket at exactly 10,000 ft.</p>
+            </div>
+            <div id="toy-rocket" class="toy__stage"><p class="toy__ph">loading toy…</p></div>
+          </article>
+          <article class="toy" aria-labelledby="toy-plunger-title">
+            <div class="toy__head">
+              <h3 class="toy__title" id="toy-plunger-title">Beat the plunger</h3>
+              <p class="toy__desc">My crystallography plunger quenches in under 10 ms. Your turn.</p>
+            </div>
+            <div id="toy-plunger" class="toy__stage"><p class="toy__ph">loading toy…</p></div>
+          </article>
+          <article class="toy" aria-labelledby="toy-sumo-title">
+            <div class="toy__head">
+              <h3 class="toy__title" id="toy-sumo-title">Stay in the ring</h3>
+              <p class="toy__desc">My old sumo robot wants you out. Last 15 seconds.</p>
+            </div>
+            <div id="toy-sumo" class="toy__stage"><p class="toy__ph">loading toy…</p></div>
+          </article>
+        </div>
+        <div class="goose-row">
+          <button class="goose-btn" type="button" data-goose>
+            <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M6.5 3.2c1.6 0 2.7 1.1 2.7 2.6 0 1-.5 1.7-1 2.5-.5.8-.6 1.4.2 2 1.3.9 3.6.4 5.7.9 2 .5 3 1.9 2.4 3.6-.8 2.1-3.6 2.9-6.6 2.6-3.3-.3-5.4-2-5.4-4.4 0-1.6 1-2.6 1.6-3.6.4-.7.3-1.3-.3-1.5-.6-.2-1.6.2-2.6.3.6-1.3 1.3-1.9 2-2.1-.1-1.6 1.2-2.9 1.3-2.9Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><circle cx="7" cy="5.4" r=".8" fill="currentColor"/></svg>
+            <span>release the goose</span>
+          </button>
+          <p class="goose-note">(it’s from Waterloo. it will honk.)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── CV ───────────── -->
+    <section id="cv" class="section cv" aria-labelledby="cv-label">
+      <div class="wrap">
+        <div class="label-row">
+          <h2 class="label-row__title" id="cv-label">cv</h2>
+          <span class="label-row__aside" data-bind="shortRole">Mechatronics engineer (almost)</span>
+        </div>
+        <div class="cv__body" id="cv-body">
+          <noscript><p class="nojs-note">The CV is rendered with JavaScript. Email <a href="mailto:richard.ding@uwaterloo.ca">richard.ding@uwaterloo.ca</a> for a copy.</p></noscript>
+        </div>
+        <ul class="cv__links" id="cv-links">
+          <li><a href="mailto:richard.ding@uwaterloo.ca">richard.ding@uwaterloo.ca</a></li>
+          <li><a href="https://github.com/Redstone-ray" target="_blank" rel="noopener">GitHub<span class="ext" aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a></li>
+          <li><a href="https://www.linkedin.com/in/richard-ding-40b59017a/" target="_blank" rel="noopener">LinkedIn<span class="ext" aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a></li>
+          <li><a href="https://aizenberglab.seas.harvard.edu/people/richard-ding" target="_blank" rel="noopener">Aizenberg Lab<span class="ext" aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ───────────── Footer ───────────── -->
+  <footer id="contact" class="ft on-dark">
+    <div class="wrap">
+      <div class="ft__say">
+        <a class="ft__big" id="ft-mail" href="mailto:richard.ding@uwaterloo.ca">Say hi <span class="ft__arrow" aria-hidden="true">→</span></a>
+        <a class="ft__email" id="ft-email" href="mailto:richard.ding@uwaterloo.ca">richard.ding@uwaterloo.ca</a>
+        <ul class="ft__links" id="ft-links">
+          <li><a href="https://github.com/Redstone-ray" target="_blank" rel="noopener">GitHub<span class="ext" aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a></li>
+          <li><a href="https://www.linkedin.com/in/richard-ding-40b59017a/" target="_blank" rel="noopener">LinkedIn<span class="ext" aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a></li>
+          <li><a href="https://aizenberglab.seas.harvard.edu/people/richard-ding" target="_blank" rel="noopener">Aizenberg Lab<span class="ext" aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a></li>
+        </ul>
+      </div>
+      <div class="ft__row">
+        <div id="scent-lcd" class="scent">
+          <div class="scent__ph" aria-hidden="true"><span>AROMA</span><span>scent: citrus</span></div>
+        </div>
+        <div class="ft__colophon">
+          <p>Hand-built with plain HTML, CSS and JS. Fluids simulated, geese real. © 2026 Richard Ding.</p>
+          <p data-bind="location">Cambridge, MA · Waterloo, ON</p>
+          <p class="ft__clock" hidden><time id="ft-time"></time> in Cambridge<span class="ft__status" id="ft-status"></span></p>
+          <p class="ft__motion-row" hidden><button class="ft__motion" type="button">motion: on</button></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project view (filled by site.js) -->
+  <dialog class="pv" id="pv" aria-labelledby="pv-title">
+    <div class="pv__scrim" aria-hidden="true"></div>
+    <div class="pv__sheet" id="pv-sheet" tabindex="-1">
+      <div class="pv__bar">
+        <button class="pv__back" type="button"><span aria-hidden="true">←</span> all work</button>
+        <span class="pv__count" id="pv-count" aria-hidden="true"></span>
+        <p class="sr-only" aria-live="polite" id="pv-live"></p>
+        <nav class="pv__pn" aria-label="Projects">
+          <a class="pv__prev" id="pv-prev" href="#/work/">prev</a>
+          <span class="pv__slash" aria-hidden="true">/</span>
+          <a class="pv__next" id="pv-next" href="#/work/">next</a>
+        </nav>
+      </div>
+      <div class="pv__content" id="pv-content"></div>
+    </div>
+  </dialog>
+
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/fx/fingering.js"></script>
+  <script defer src="assets/js/fx/rocket.js"></script>
+  <script defer src="assets/js/fx/plunger.js"></script>
+  <script defer src="assets/js/fx/sumo.js"></script>
+  <script defer src="assets/js/fx/goose.js"></script>
+  <script defer src="assets/js/fx/scent.js"></script>
+  <script defer src="assets/js/fx/thermal.js"></script>
+  <script defer src="assets/js/site.js"></script>
+</body>
+</html>
