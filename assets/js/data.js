@@ -279,20 +279,25 @@ window.PROJECTS = [
   },
   {
     slug: 'ball-balancer',
-    title: 'Ball balancers',
+    title: 'Ball-balancing Stewart platform',
     caption: 'Machines that tilt to keep a ball exactly where you tell it to',
     year: '2025',
-    where: 'University of Waterloo, third-year design project',
+    where: 'University of Waterloo, MTE 380 (team of five)',
     role: 'Controls and modelling',
-    tags: ['PID', 'computer vision', 'Simulink', 'parallel mechanisms'],
+    tags: ['PID', 'load-cell sensing', 'parallel mechanisms', 'Simulink', 'computer vision'],
     body: [
-      'Our third-year design project: a 3-DoF tilting platform and a beam balancer. We compared several PID-based control and trajectory strategies using camera and load-cell feedback, with Simulink models to check them.'
+      'A 3-DoF Stewart platform: three servos tilt a plate to keep a ball where you ask. The usual setup tracks a ping-pong ball with a camera. We wanted to feel the ball instead, so we put a three-axis load cell under the plate and worked out where the ball is from the tipping moment it makes.',
+      'That needed a 2-inch steel ball, about 100 times heavier, so we redesigned the platform around it: stronger servos, new linkages and a lighter, topology-optimized plate. Decoupled x and y PID loops keep it balanced, and a Simulink study compared step commands with fixed and replanned trajectories. We also built a spherical parallel manipulator to show the ball joints could go.',
+      'The animation is drawn from the platform’s geometry, with the ball and controller simulated.'
     ],
     links: [{ label: 'Code on GitHub', url: 'https://github.com/Redstone-ray/3YDP' }],
-    cover: { type: 'image', src: 'assets/media/balancer/beam.webp', tone: 'light', bg: '#fbfbfc', aspect: 1.333, alt: 'CAD render of the beam balancer: a ball resting in a tilted channel beam, driven by a hobby servo through a two-bar linkage' },
+    cover: { type: 'video', src: 'assets/media/balancer/stewart.mp4', poster: 'assets/media/balancer/stewart-poster.webp', tone: 'light', bg: '#f4f2ee', aspect: 1.333, alt: 'Animated drawing of a three-servo Stewart platform tilting its plate to roll a steel ball to a series of setpoints and around a circle, with a top view beside it' },
     gallery: [
-      { type: 'image', src: 'assets/media/balancer/beam.webp', alt: 'CAD render of the beam balancer. A grey channel beam is tilted on a pivot post, with a ball resting in it and a hobby servo driving the beam through a two-bar linkage.', caption: 'The beam balancer, in CAD.' },
-      { type: 'image', src: 'assets/media/balancer/spm.webp', alt: 'CAD render of a spherical parallel manipulator. Three curved linkages connect a stepper-motor stack at the base to a tilted circular platform.', caption: 'One of our 3-DoF platform concepts, a spherical parallel manipulator, in CAD.' }
+      { type: 'image', src: 'assets/media/balancer/platform.webp', alt: 'The finished platform: a black plate on three dark linkages driven by servos on a clear acrylic base, lit blue from behind', caption: 'The finished platform.' },
+      { type: 'image', src: 'assets/media/balancer/platform-cad.webp', alt: 'CAD of the redesigned platform: a topology-optimized plate over a load-cell plate, three linkages and three servos on a base plate', caption: 'The heavy-ball redesign, in CAD.' },
+      { type: 'image', src: 'assets/media/balancer/plate.webp', alt: 'A circular plate with organic, branching cut-outs from topology optimization', caption: 'A topology-optimized plate: stiff where it needs to be, light everywhere else.' },
+      { type: 'image', src: 'assets/media/balancer/spm-photo.webp', alt: 'A small spherical parallel manipulator with curved white links holding an egg on its platform', caption: 'A spherical parallel manipulator, built to replace the ball joints.' },
+      { type: 'image', src: 'assets/media/balancer/beam.webp', alt: 'CAD render of the beam balancer. A grey channel beam is tilted on a pivot post, with a ball resting in it and a hobby servo driving the beam through a two-bar linkage.', caption: 'An earlier beam balancer, in CAD.' }
     ]
   },
   {
