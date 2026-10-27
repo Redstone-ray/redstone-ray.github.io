@@ -79,7 +79,7 @@ window.SITE = {
       { when: 'Sep – Dec 2024', what: 'New Product Development Intern', where: 'Musashi Americas', note: 'Smart sensing ball joint: 4-layer automotive PCB, magnetic sensing, CAN firmware, load testing.' },
       { when: 'Apr – Aug 2024', what: 'Research Assistant', where: 'Orthopaedic Mechatronics Lab, University of Waterloo', note: 'Fixtures for 6-axis spinal testers, FEA, 3D-printed vertebrae.' },
       { when: 'Jan – Apr 2024', what: 'Research Assistant', where: 'Engineering IDEAS Clinic, University of Waterloo', note: 'ROS2 TurtleBot navigation modules for robotics and controls courses.' },
-      { when: '2023 – now', what: 'Controls Lead', where: 'Waterloo Rocketry', note: 'Airbrakes and canards, flight firmware, 6-DoF sims and a CFD pipeline. Led 30+ students; ran “Controls 101” workshops.' }
+      { when: '2023 – 2025', what: 'Controls Lead', where: 'Waterloo Rocketry', note: 'Airbrakes and canards, flight firmware, 6-DoF sims and a CFD pipeline. Led 30+ students; ran “Controls 101” workshops.' }
     ],
     talks: [
       { when: '2025', what: 'Poster', where: 'Canadian Space Conference' },
@@ -177,26 +177,24 @@ window.PROJECTS = [
     slug: 'rocketry',
     title: 'Waterloo Rocketry: canards and airbrakes',
     caption: 'Fins that keep a student rocket from spinning, and brakes that stop it at the right height',
-    year: '2023 – now',
+    year: '2023 – 2025',
     where: 'Waterloo Rocketry · Launch Canada',
     role: 'Controls Lead',
     tags: ['controls', 'state estimation', 'STM32 / FreeRTOS', 'Ansys CFD', 'machining'],
     body: [
-      'I lead the controls subsystem (30+ students) on Waterloo Rocketry’s liquid-fuelled competition rockets. My first year I worked on almost every part of a solid-motor demo rocket that we built in seven weeks to prove out parachute recovery.',
+      'I led the controls subsystem (30+ students) on Waterloo Rocketry’s liquid-fuelled competition rockets. My first year I worked on almost every part of a solid-motor demo rocket that we built in seven weeks to prove out parachute recovery.',
       'The canards are small fins the flight computer steers to stop the rocket rolling. I worked on the mechanism, the controller and state estimator (LQR with a Kalman filter), the STM32/FreeRTOS flight firmware, 6-DoF MATLAB/Simulink sims and a PyAnsys CFD pipeline for the aerodynamics.',
       'The airbrakes are drag flaps that open mid-flight under closed-loop control so the rocket tops out at a target altitude. I presented them as a podium talk at Launch Canada 2024. You can fly them yourself in the toys section below.'
     ],
     cover: { type: 'video', src: 'assets/media/canards/bench.mp4', poster: 'assets/media/canards/bench-poster.webp', tone: 'dark', aspect: 1.78, alt: 'The canard module tilting on the bench while its fins respond' },
     gallery: [
-      { type: 'image', src: 'assets/media/canards/parts.webp', alt: 'Canard fin, bearings, shaft and gear laid out on a table', caption: 'Canard parts, before assembly.', wide: true },
-      { type: 'image', src: 'assets/media/canards/mechanism.webp', alt: 'Top view of the machined canard actuation mechanism with a servo', caption: 'The canard actuation mechanism.' },
-      { type: 'image', src: 'assets/media/canards/electronics.webp', alt: 'Canard module with wiring and circuit boards', caption: 'Wired up.' },
+      { type: 'image', src: 'assets/media/canards/parts.webp', alt: 'Canard fin, bearing block, bearings, shaft and bevel gear laid out on a grey bench', caption: 'Canard parts, before assembly.', wide: true },
+      { type: 'image', src: 'assets/media/canards/bearing.webp', alt: 'A machined aluminium bearing block holding a large thin-section ball bearing', caption: 'A machined bearing block.' },
+      { type: 'image', src: 'assets/media/canards/mechanism.webp', alt: 'Top view of the canard plate with the fin shafts, bearing blocks and servo assembled', caption: 'The actuation mechanism on its plate.' },
+      { type: 'image', src: 'assets/media/canards/electronics.webp', alt: 'Underside of the canard plate with the control boards and wiring installed', caption: 'Wired up.' },
       { type: 'image', src: 'assets/media/canards/assembly.webp', alt: 'Assembled canard section of the rocket', caption: 'Canard section, assembled.' },
-      { type: 'image', src: 'assets/media/canards/cfd.webp', alt: 'Ansys CFD pressure contours around a fin', caption: 'CFD around a canard.' },
-      { type: 'image', src: 'assets/media/airbrakes/cad.webp', alt: 'CAD of the airbrake mechanism with a servo', caption: 'Airbrakes in CAD.' },
-      { type: 'image', src: 'assets/media/airbrakes/printed.webp', alt: '3D-printed airbrake mechanism prototype', caption: 'A printed airbrake, fitted inside its housing.' },
-      { type: 'image', src: 'assets/media/airbrakes/prototype.webp', alt: 'A red and white 3D-printed airbrake mechanism on a desk next to a keyboard and mouse, its white petals partly deployed from under the red ring', caption: 'Another printed airbrake, its white petals sliding out from under the red ring.' },
-      { type: 'image', src: 'assets/media/canards/launch.webp', alt: 'A rocket climbing above the treeline at Launch Canada', caption: 'Launch Canada.' }
+      { type: 'video', src: 'assets/media/canards/flight.mp4', poster: 'assets/media/canards/flight-poster.webp', alt: 'Onboard camera on a test flight: a canard fin in the foreground as the ground falls away below', caption: 'Onboard on a test flight, a canard fin in view.' },
+      { type: 'image', src: 'assets/media/airbrakes/prototype.webp', alt: 'A red and white 3D-printed airbrake mechanism on a desk, its white petals partly deployed from under the red ring', caption: 'A printed airbrake, its petals sliding out from under the red ring.' }
     ]
   },
   {
@@ -275,9 +273,8 @@ window.PROJECTS = [
     links: [{ label: 'Code on GitHub', url: 'https://github.com/Redstone-ray/Aroma' }],
     cover: { type: 'image', src: 'assets/media/aroma/lcd.webp', fit: 'contain', tone: 'dark', bg: '#0b0b0b', aspect: 1.12, alt: 'Custom circuit board with an LCD reading Aroma, scent lavender, water low' },
     gallery: [
-      { type: 'image', src: 'assets/media/aroma/render.webp', alt: 'Render of the diffuser with a bank of oil reservoirs', caption: 'The reservoir bank.' },
-      { type: 'image', src: 'assets/media/aroma/reservoir.webp', alt: 'Render of a single reservoir cartridge', caption: 'One cartridge.' },
-      { type: 'image', src: 'assets/media/aroma/web-ui.webp', alt: 'Web control page for the diffuser', caption: 'Scheduling from a browser.' }
+      { type: 'image', src: 'assets/media/aroma/lcd.webp', alt: 'Custom circuit board with an LCD reading Aroma, scent lavender, water low', caption: 'The custom ESP32 board and its screen.' },
+      { type: 'image', src: 'assets/media/aroma/render.webp', alt: 'Render of the diffuser with a bank of oil reservoirs', caption: 'The reservoir bank.' }
     ]
   },
   {
@@ -292,7 +289,7 @@ window.PROJECTS = [
       'Our third-year design project: a 3-DoF tilting platform and a beam balancer. We compared several PID-based control and trajectory strategies using camera and load-cell feedback, with Simulink models to check them.'
     ],
     links: [{ label: 'Code on GitHub', url: 'https://github.com/Redstone-ray/3YDP' }],
-    cover: { type: 'image', src: 'assets/media/balancer/beam.webp', tone: 'light', bg: '#fbfbfc', aspect: 1.6, alt: 'CAD render of the beam balancer: a ball resting in a tilted channel beam, driven by a hobby servo through a two-bar linkage' },
+    cover: { type: 'image', src: 'assets/media/balancer/beam.webp', tone: 'light', bg: '#fbfbfc', aspect: 1.333, alt: 'CAD render of the beam balancer: a ball resting in a tilted channel beam, driven by a hobby servo through a two-bar linkage' },
     gallery: [
       { type: 'image', src: 'assets/media/balancer/beam.webp', alt: 'CAD render of the beam balancer. A grey channel beam is tilted on a pivot post, with a ball resting in it and a hobby servo driving the beam through a two-bar linkage.', caption: 'The beam balancer, in CAD.' },
       { type: 'image', src: 'assets/media/balancer/spm.webp', alt: 'CAD render of a spherical parallel manipulator. Three curved linkages connect a stepper-motor stack at the base to a tilted circular platform.', caption: 'One of our 3-DoF platform concepts, a spherical parallel manipulator, in CAD.' }
@@ -311,9 +308,7 @@ window.PROJECTS = [
       'It took first place. You can try to survive it in the toys section below.'
     ],
     cover: { type: 'image', src: 'assets/media/sumo/robot.webp', tone: 'dark', scrim: 'strong', aspect: 1.33, alt: 'A small pink duct-taped robot with ultrasonic sensors and a voltage display' },
-    gallery: [
-      { type: 'image', src: 'assets/media/sumo/ring.webp', alt: 'The sumo robot moving in a black ring', caption: 'In the ring.' }
-    ]
+    gallery: []
   },
   {
     slug: 'turtlebots',
@@ -327,9 +322,7 @@ window.PROJECTS = [
       'I wrote ROS2 navigation and control modules for Waterloo’s robotics and controls courses. TurtleBots drive through obstacle courses, act out warehouse runs and react to what they see, including stop signs.'
     ],
     cover: { type: 'image', src: 'assets/media/turtlebot/stop-sign.webp', tone: 'dark', aspect: 1, alt: 'A robot camera view with a detected stop sign in a bounding box' },
-    gallery: [
-      { type: 'image', src: 'assets/media/turtlebot/robot.webp', alt: 'A TurtleBot next to a cardboard obstacle', caption: 'A TurtleBot meets a box.' }
-    ]
+    gallery: []
   },
   {
     slug: 'goosenator',
