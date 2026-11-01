@@ -46,7 +46,7 @@ window.SITE = {
   hero: {
     eyebrow: 'Mechatronics Engineering, University of Waterloo · Research Fellow, Harvard SEAS',
     headline: 'I build instruments, controllers and machines that move <em>liquid</em>, <em>light</em> and the occasional <em>rocket</em>.',
-    hint: 'Press and hold anywhere to grow a fluid flower. It’s what I study.'
+    hint: 'Press and hold anywhere.'
   },
 
   about: [
@@ -74,7 +74,6 @@ window.SITE = {
     experience: [
       { when: 'Apr 2026 – now', what: 'Research Fellow', where: 'Aizenberg Lab, Harvard SEAS', note: 'Liquafilm hardware co-lead (liquid smart windows), viscous-fingering experiments. Mentored a summer undergraduate researcher.' },
       { when: 'Jan – Apr 2026', what: 'Research Assistant', where: 'Waterloo Microfluidics Lab (Prof. Carolyn Ren)', note: 'Soft compression sleeve for lymphedema: flexible sensors and closed-loop pressure control.' },
-      { when: 'Sep – Dec 2025', what: 'Research Assistant', where: 'Nishida Lab, University of Waterloo', note: 'Physics-based model of low-cost optical aerosol sensors, validated in chamber experiments.' },
       { when: 'May – Aug 2025', what: 'Scientific Instrumentation Development Intern', where: 'Thorne Lab, LASSP, Cornell University', note: 'Gravity-drop mix-and-quench system for time-resolved crystallography.' },
       { when: 'Sep – Dec 2024', what: 'New Product Development Intern', where: 'Musashi Americas', note: 'Smart sensing ball joint: 4-layer automotive PCB, magnetic sensing, CAN firmware, load testing.' },
       { when: 'Apr – Aug 2024', what: 'Research Assistant', where: 'Orthopaedic Mechatronics Lab, University of Waterloo', note: 'Fixtures for 6-axis spinal testers, FEA, 3D-printed vertebrae.' },
@@ -113,22 +112,21 @@ window.PROJECTS = [
   {
     slug: 'blooms',
     title: 'Viscous fingering',
-    caption: 'Fluid flowers, grown by pushing one liquid into a thicker one between two sheets of glass',
+    caption: 'Fluid flowers between two sheets of glass',
     year: '2026',
     where: 'Aizenberg Lab, Harvard SEAS',
-    role: 'Experiments, imaging rig and analysis software',
-    tags: ['fluid mechanics', 'Hele-Shaw cell', 'computer vision', 'Python'],
+    role: 'Experiments and imaging',
+    tags: ['fluid mechanics', 'imaging'],
     body: [
-      'When a thin fluid pushes into a thicker one through a narrow gap, the boundary between them goes unstable and branches into fingers: the Saffman–Taylor instability. Pushed in from a single point, the fingers split again and again until the pattern looks like a flower.',
-      'I build the imaging rig and fixtures, a segmentation pipeline that measures every pattern frame by frame, a live monitor that streams results from the camera during a run, and the flow protocols that drive the pump.',
-      'This work is unpublished, so the pictures here are illustrations and simulations, not lab footage.'
+      'Push a thin fluid into a thick one between two plates and its edge can’t stay smooth: it fingers, splits and blooms.',
+      'One of our images won Look into the Lab at Visions of the Wyss 2026.'
     ],
-    cover: { type: 'video', src: 'assets/media/blooms/sim-growth.mp4', poster: 'assets/media/blooms/sim-growth-poster.webp', tone: 'dark', scrim: 'strong', aspect: 1, alt: 'Simulation of a glowing amber fluid bloom growing from a single injection port, its fingers splitting at the tips' },
+    links: [
+      { label: 'Visions of the Wyss 2026', url: 'https://wyss.harvard.edu/news/visions-of-the-wyss-2026/' }
+    ],
+    cover: { type: 'image', src: 'assets/media/blooms/wyss-2026.webp', tone: 'dark', bg: '#050403', scrim: 'strong', lead: false, aspect: 1.463, alt: 'Four rows of amber fluid blooms on black, each row one injection growing from left to right' },
     gallery: [
-      { type: 'video', src: 'assets/media/blooms/sim-growth.mp4', poster: 'assets/media/blooms/sim-growth-poster.webp', alt: 'Simulation of a glowing amber fluid bloom growing from a single injection port, its fingers splitting at the tips as it spreads across a black plate', caption: 'A bloom growing from a single port. Simulated.' },
-      { type: 'image', src: 'assets/media/blooms/concept-cell.svg', aspect: 1.6, alt: 'Exploded concept diagram of a Hele-Shaw cell: a thin liquid pumped into the centre between two glass plates branches into splitting fingers as it pushes a thicker liquid aside', caption: 'The setup, exploded: a thin liquid pumped in between two plates of glass pushes a thicker one aside, and its front splits into fingers. Illustration.' },
-      { type: 'image', src: 'assets/media/blooms/sim-steps.webp', alt: 'Three moments of one simulated bloom: a near-perfect amber circle, the same front rippling into even scallops, then a flower of fingers splitting at their tips', caption: 'How a bloom forms: a growing circle ripples, then each bulge splits at its tip. An illustration of the instability, not to one scale.', wide: true },
-      { type: 'image', src: 'assets/media/blooms/sim-library.webp', alt: 'Twelve simulated fingering patterns on black, ranging from sparse, needle-like branches to dense, compact blooms, some young with only a few fingers and others richly tip-split', caption: 'A dozen blooms from the same simulation with different settings, from sparse and needle-like to dense and petalled. Each is framed on its own, so they aren’t to one scale.', wide: true }
+      { type: 'image', src: 'assets/media/blooms/wyss-2026.webp', alt: 'Four rows of amber fluid blooms on black, each row one injection growing from left to right, some petalled, some ringed, some fringed', caption: 'Visions of the Wyss 2026, Look into the Lab winner. With Raphael Kay and Rafiq Omair.', wide: true }
     ]
   },
   {
@@ -142,16 +140,16 @@ window.PROJECTS = [
     body: [
       'Liquafilm is a retrofittable, fluid-filled window screen. Thin cavities fill with a water-based fluid to dim, blur or filter sunlight, drain to go clear, and hold either state with no standby power.',
       'As project co-lead with Raphael Kay, I led the hardware: I designed the second prototype’s glass, frame and brackets, wrote the pump controller with timed, light, temperature and setpoint modes, and took the device from the bench to a full-size window in a real building.',
-      'The device isn’t published yet, so the pictures here are illustrations of the idea, not photos.'
+      'Unpublished, so these are illustrations.'
     ],
     links: [
       { label: 'Harvard SEAS feature', url: 'https://seas.harvard.edu/news/window-heating-and-cooling' }
     ],
     cover: { type: 'image', src: 'assets/media/liquafilm/concept-cover.svg', still: 'assets/media/liquafilm/concept-cover-still.svg', tone: 'light', bg: '#f4f2ee', lead: false, aspect: 1.12, alt: 'Concept illustration: a window screen that fills with amber liquid to dim the sunlight, then drains clear again' },
     gallery: [
-      { type: 'compare', before: 'assets/media/liquafilm/concept-drained.svg', after: 'assets/media/liquafilm/concept-filled.svg', labels: ['drained', 'filled'], alt: 'The same window drained and filled with amber liquid (concept illustration)', caption: 'Drag to fill the window. Illustration.', wide: true },
-      { type: 'image', src: 'assets/media/liquafilm/concept-modes.svg', aspect: 2.5, alt: 'Concept diagram of three modes: dim tints the glass amber and weakens the light, blur frosts it and scatters the light, filter lets some colours through and blocks others', caption: 'Three things the liquid can do to sunlight: dim it, blur it, or filter out some colours.', wide: true },
-      { type: 'image', src: 'assets/media/liquafilm/concept-layers.svg', aspect: 1.6, alt: 'Exploded concept diagram: the existing window, a thin liquid cavity between two glass sheets, and a frame, with a pump, reservoir and light and temperature sensors', caption: 'How it fits over a window: a thin liquid cavity between two sheets of glass, filled and drained by a pump that listens to light and temperature sensors. Illustration.', wide: true }
+      { type: 'compare', before: 'assets/media/liquafilm/concept-drained.svg', after: 'assets/media/liquafilm/concept-filled.svg', labels: ['drained', 'filled'], alt: 'The same window drained and filled with amber liquid (concept illustration)', caption: 'Drained and filled.', wide: true },
+      { type: 'image', src: 'assets/media/liquafilm/concept-modes.svg', aspect: 2.5, alt: 'Concept diagram of three modes: dim tints the glass amber and weakens the light, blur frosts it and scatters the light, filter lets some colours through and blocks others', caption: 'Dim, blur, filter.', wide: true },
+      { type: 'image', src: 'assets/media/liquafilm/concept-layers.svg', aspect: 1.6, alt: 'Exploded concept diagram: the existing window, a thin liquid cavity between two glass sheets, and a frame, with a pump, reservoir and light and temperature sensors', caption: 'The layers.', wide: true }
     ]
   },
   {
@@ -165,12 +163,12 @@ window.PROJECTS = [
     body: [
       'Time-resolved crystallography needs a reaction stopped at an exact moment. This instrument mixes a crystal with a ligand and drops it into liquid nitrogen in under 10 ms.',
       'I led the redesign: I merged the legacy electronics into one motor-control PCB, added dual-sensor drop timing, and designed a gas-exchange manifold that clears cold gas so samples are not pre-cooled on the way down. It is built from 3D-printed and off-the-shelf parts and takes standard sample mounts, so a lab without much money can build one.',
-      'The instrument is unpublished, so the pictures here are illustrations, not photos of the device.'
+      'Unpublished, so these are illustrations.'
     ],
     cover: { type: 'image', src: 'assets/media/crystallography/concept-cover.svg', still: 'assets/media/crystallography/concept-cover-still.svg', tone: 'light', bg: '#f4f2ee', aspect: 1.45, alt: 'Concept illustration of a gravity-drop plunger: a protein crystal in a sample loop falls through a fine ligand spray and two ring-shaped timing gates into a glass dewar of liquid nitrogen, under 10 ms from mix to quench' },
     gallery: [
-      { type: 'image', src: 'assets/media/crystallography/concept-system.svg', aspect: 1.6, alt: 'Concept schematic of the plunger’s electronics: a single motor-control board wired to the drop release, the ligand sprayer, two ring-shaped timing sensors, a gas-exchange manifold that sweeps cold vapour away from the dewar opening, and the liquid-nitrogen dewar', caption: 'One board runs it all: the drop release, the sprayer, two timing sensors, the gas-exchange manifold and the dewar. A schematic, not the real wiring.', wide: true },
-      { type: 'image', src: 'assets/media/crystallography/concept-timeline.svg', aspect: 3.46, srcNarrow: 'assets/media/crystallography/concept-timeline-narrow.svg', aspectNarrow: 0.5714, alt: 'A timeline from 0 to 300 milliseconds. The plunger’s mix-to-quench, under 10 ms, is a tiny sliver at the very start. A blink, about 100–150 ms, and pressing a button, about 250 ms, come much later.', caption: 'For scale: mix to quench in under 10 ms, long before you could blink.', wide: true }
+      { type: 'image', src: 'assets/media/crystallography/concept-system.svg', aspect: 1.6, alt: 'Concept schematic of the plunger’s electronics: a single motor-control board wired to the drop release, the ligand sprayer, two ring-shaped timing sensors, a gas-exchange manifold that sweeps cold vapour away from the dewar opening, and the liquid-nitrogen dewar', caption: 'One board runs it all.', wide: true },
+      { type: 'image', src: 'assets/media/crystallography/concept-timeline.svg', aspect: 3.46, srcNarrow: 'assets/media/crystallography/concept-timeline-narrow.svg', aspectNarrow: 0.5714, alt: 'A timeline from 0 to 300 milliseconds. The plunger’s mix-to-quench, under 10 ms, is a tiny sliver at the very start. A blink, about 100–150 ms, and pressing a button, about 250 ms, come much later.', caption: 'Under 10 ms, before you could blink.', wide: true }
     ]
   },
   {
@@ -184,7 +182,7 @@ window.PROJECTS = [
     body: [
       'I led the controls subsystem (30+ students) on Waterloo Rocketry’s liquid-fuelled competition rockets. My first year I worked on almost every part of a solid-motor demo rocket that we built in seven weeks to prove out parachute recovery.',
       'The canards are small fins the flight computer steers to stop the rocket rolling. I worked on the mechanism, the controller and state estimator (LQR with a Kalman filter), the STM32/FreeRTOS flight firmware, 6-DoF MATLAB/Simulink sims and a PyAnsys CFD pipeline for the aerodynamics.',
-      'The airbrakes are drag flaps that open mid-flight under closed-loop control so the rocket tops out at a target altitude. I presented them as a podium talk at Launch Canada 2024. You can fly them yourself in the toys section below.'
+      'The airbrakes are drag flaps that open mid-flight under closed-loop control so the rocket tops out at a target altitude. I presented them as a podium talk at Launch Canada 2024.'
     ],
     cover: { type: 'video', src: 'assets/media/canards/bench.mp4', poster: 'assets/media/canards/bench-poster.webp', tone: 'dark', aspect: 1.78, alt: 'The canard module tilting on the bench while its fins respond' },
     gallery: [
@@ -193,8 +191,8 @@ window.PROJECTS = [
       { type: 'image', src: 'assets/media/canards/mechanism.webp', alt: 'Top view of the canard plate with the fin shafts, bearing blocks and servo assembled', caption: 'The actuation mechanism on its plate.' },
       { type: 'image', src: 'assets/media/canards/electronics.webp', alt: 'Underside of the canard plate with the control boards and wiring installed', caption: 'Wired up.' },
       { type: 'image', src: 'assets/media/canards/assembly.webp', alt: 'Assembled canard section of the rocket', caption: 'Canard section, assembled.' },
-      { type: 'video', src: 'assets/media/canards/flight.mp4', poster: 'assets/media/canards/flight-poster.webp', alt: 'Onboard camera on a test flight: a canard fin in the foreground as the ground falls away below', caption: 'Onboard on a test flight, a canard fin in view.' },
-      { type: 'image', src: 'assets/media/airbrakes/prototype.webp', alt: 'A red and white 3D-printed airbrake mechanism on a desk, its white petals partly deployed from under the red ring', caption: 'A printed airbrake, its petals sliding out from under the red ring.' }
+      { type: 'video', src: 'assets/media/canards/flight.mp4', poster: 'assets/media/canards/flight-poster.webp', alt: 'Onboard camera on a test flight: a canard fin in the foreground as the ground falls away below', caption: 'Onboard, on a test flight.' },
+      { type: 'image', src: 'assets/media/airbrakes/prototype.webp', alt: 'A red and white 3D-printed airbrake mechanism on a desk, its white petals partly deployed from under the red ring', caption: 'A printed airbrake.' }
     ]
   },
   {
@@ -211,10 +209,10 @@ window.PROJECTS = [
     ],
     cover: { type: 'image', src: 'assets/media/sleeve/sleeve-full.webp', tone: 'dark', scrim: 'strong', aspect: 0.8, alt: 'A white mannequin wearing the compression sleeve from shoulder to glove, with clear tubes running down to a black motor pack on the belt' },
     gallery: [
-      { type: 'image', src: 'assets/media/sleeve/sleeve-full.webp', alt: 'A white mannequin wearing the compression sleeve. Fabric bands sit on the upper arm and forearm, there is a cable cuff at the wrist, and clear tubes run down the chest to a black two-spool motor pack on the belt.', caption: 'The whole sleeve, on a mannequin.' },
+      { type: 'image', src: 'assets/media/sleeve/sleeve-full.webp', alt: 'A white mannequin wearing the compression sleeve. Fabric bands sit on the upper arm and forearm, there is a cable cuff at the wrist, and clear tubes run down the chest to a black two-spool motor pack on the belt.', caption: 'On a mannequin.' },
       { type: 'video', src: 'assets/media/sleeve/sleeve-loop.mp4', poster: 'assets/media/sleeve/sleeve-loop-poster.webp', alt: 'A white mannequin arm wearing the compression sleeve. Two fabric bands on the forearm tighten and release as the drive cables pull, and the clear tubes run down to the motor pack at the waist.', caption: 'The bands tightening and letting go.' },
-      { type: 'image', src: 'assets/media/sleeve/sleeve-bands.webp', alt: 'Close-up of two sleeve bands on a mannequin arm. Each has a braided cable channel, a black V-shaped hanger and a clip, with one taut line running between the bands.', caption: 'Two of the compression bands.' },
-      { type: 'image', src: 'assets/media/sleeve/sleeve-drive.webp', alt: 'A black 3D-printed drive pack on a belt. It holds two grey cable spools and two small DC gear motors, with clear tubes entering from the top and coloured wires leaving at the right.', caption: 'The drive pack on the belt.' }
+      { type: 'image', src: 'assets/media/sleeve/sleeve-bands.webp', alt: 'Close-up of two sleeve bands on a mannequin arm. Each has a braided cable channel, a black V-shaped hanger and a clip, with one taut line running between the bands.', caption: 'The bands.' },
+      { type: 'image', src: 'assets/media/sleeve/sleeve-drive.webp', alt: 'A black 3D-printed drive pack on a belt. It holds two grey cable spools and two small DC gear motors, with clear tubes entering from the top and coloured wires leaving at the right.', caption: 'The drive pack.' }
     ]
   },
   {
@@ -231,7 +229,7 @@ window.PROJECTS = [
     ],
     cover: { type: 'image', src: 'assets/media/nightline/sun.webp', hover: 'assets/media/nightline/moon.webp', tone: 'light', bg: '#f3f2ef', aspect: 1, alt: 'Exploded render of a bedside lamp with a ridged sun-shaped crown' },
     gallery: [
-      { type: 'compare', before: 'assets/media/nightline/sun.webp', after: 'assets/media/nightline/moon.webp', labels: ['sun', 'moon'], alt: 'The sun and moon versions of the lamp enclosure', caption: 'Two crowns, one for each lamp.' }
+      { type: 'compare', before: 'assets/media/nightline/sun.webp', after: 'assets/media/nightline/moon.webp', labels: ['sun', 'moon'], alt: 'The sun and moon versions of the lamp enclosure', caption: 'Sun and moon.' }
     ]
   },
   {
@@ -244,18 +242,17 @@ window.PROJECTS = [
     tags: ['automotive', 'PCB design', 'magnetic sensing', 'CAN bus'],
     body: [
       'Ball joints wear out silently. At Musashi I prototyped the sensing for a ball joint that measures its own oscillation angle and axial movement with non-contact magnetic sensing, so a car can report its ride height, payload and wear. Musashi has since announced the Angle & Wear Sensing Ball Joint, powered by its patent-pending Suspension Sense™ technology.',
-      'I designed a 4-layer automotive-grade PCB, wrote the acquisition firmware with CAN bus output so it plugs into the vehicle’s existing diagnostics, and ran tensile and torsional load tests on production joints.',
-      'The pictures are Musashi’s own, from their announcement.'
+      'I designed a 4-layer automotive-grade PCB, wrote the acquisition firmware with CAN bus output so it plugs into the vehicle’s existing diagnostics, and ran tensile and torsional load tests on production joints.'
     ],
     links: [
       { label: 'Musashi’s announcement', url: 'https://musashiamericas.com/2026/01/12/introducing-suspension-sense-technology/' }
     ],
     cover: { type: 'image', src: 'https://musashiamericas.com/wp-content/uploads/2026/01/SSMusashi2.Crop_-scaled.jpg', tone: 'dark', scrim: 'strong', lead: false, aspect: 1, alt: 'Close-up of a Suspension Sense ball joint fitted to an aluminium steering knuckle (image: Musashi Americas)' },
     gallery: [
-      { type: 'image', src: 'https://musashiamericas.com/wp-content/uploads/2026/01/Musashi-E3.jpg', alt: 'Musashi product poster for Suspension Sense, the angle and wear sensing ball joint, with the sensor highlighted inside a cutaway joint', caption: 'Suspension Sense™, the angle and wear sensing ball joint. Image: Musashi Americas.' },
+      { type: 'image', src: 'https://musashiamericas.com/wp-content/uploads/2026/01/Musashi-E3.jpg', alt: 'Musashi product poster for Suspension Sense, the angle and wear sensing ball joint, with the sensor highlighted inside a cutaway joint', caption: 'Image: Musashi Americas.' },
       { type: 'image', src: 'https://musashiamericas.com/wp-content/uploads/2026/01/SSMusashi1.Crop_-scaled.jpg', alt: 'A Suspension Sense ball joint on a demonstration suspension rig, with a placard reading Suspension Sense Ball Joint', caption: 'On a demo rig. Image: Musashi Americas.' },
-      { type: 'image', src: 'https://musashiamericas.com/wp-content/uploads/2026/01/Musashi-Infographic-2048x1152.jpg', alt: 'Cross-section infographic of the ball joint, labelling angle detection, wear detection, non-contact sensing, a stand-alone design, a sealed and compact package, and CAN bus output', caption: 'What it senses, in cross-section. Image: Musashi Americas.', wide: true, edge: true },
-      { type: 'image', src: 'https://musashiamericas.com/wp-content/uploads/2026/01/SSMusashiinfo.jpg', alt: 'Diagram: a magnet sensor in the joint detects the change in stud angle, which is converted into ride-height displacement over time', caption: 'From stud angle to ride height. Image: Musashi Americas.', wide: true, edge: true }
+      { type: 'image', src: 'https://musashiamericas.com/wp-content/uploads/2026/01/Musashi-Infographic-2048x1152.jpg', alt: 'Cross-section infographic of the ball joint, labelling angle detection, wear detection, non-contact sensing, a stand-alone design, a sealed and compact package, and CAN bus output', caption: 'In cross-section. Image: Musashi Americas.', wide: true, edge: true },
+      { type: 'image', src: 'https://musashiamericas.com/wp-content/uploads/2026/01/SSMusashiinfo.jpg', alt: 'Diagram: a magnet sensor in the joint detects the change in stud angle, which is converted into ride-height displacement over time', caption: 'Image: Musashi Americas.', wide: true, edge: true }
     ]
   },
   {
@@ -268,12 +265,12 @@ window.PROJECTS = [
     tags: ['ESP32', 'PCB design', 'IoT', 'peristaltic pumps'],
     body: [
       'Inspired by the scent effects on theme-park rides. Aroma has swappable essential-oil reservoirs, peristaltic pumps to dose them and an ultrasonic atomizer.',
-      'A custom ESP32 board runs the pumps, water-level sensing, an LCD, Bluetooth and a web scheduler, and the firmware changes scent to fit whatever music is playing. Try the scent switch at the bottom of this page.'
+      'A custom ESP32 board runs the pumps, water-level sensing, an LCD, Bluetooth and a web scheduler, and the firmware changes scent to fit whatever music is playing.'
     ],
     links: [{ label: 'Code on GitHub', url: 'https://github.com/Redstone-ray/Aroma' }],
     cover: { type: 'image', src: 'assets/media/aroma/lcd.webp', fit: 'contain', tone: 'dark', bg: '#0b0b0b', aspect: 1.12, alt: 'Custom circuit board with an LCD reading Aroma, scent lavender, water low' },
     gallery: [
-      { type: 'image', src: 'assets/media/aroma/lcd.webp', alt: 'Custom circuit board with an LCD reading Aroma, scent lavender, water low', caption: 'The custom ESP32 board and its screen.' },
+      { type: 'image', src: 'assets/media/aroma/lcd.webp', alt: 'Custom circuit board with an LCD reading Aroma, scent lavender, water low', caption: 'The board.' },
       { type: 'image', src: 'assets/media/aroma/render.webp', alt: 'Render of the diffuser with a bank of oil reservoirs', caption: 'The reservoir bank.' }
     ]
   },
@@ -288,16 +285,16 @@ window.PROJECTS = [
     body: [
       'A 3-DoF Stewart platform: three servos tilt a plate to keep a ball where you ask. The usual setup tracks a ping-pong ball with a camera. We wanted to feel the ball instead, so we put a three-axis load cell under the plate and worked out where the ball is from the tipping moment it makes.',
       'That needed a 2-inch steel ball, about 100 times heavier, so we redesigned the platform around it: stronger servos, new linkages and a lighter, topology-optimized plate. Decoupled x and y PID loops keep it balanced, and a Simulink study compared step commands with fixed and replanned trajectories. We also built a spherical parallel manipulator to show the ball joints could go.',
-      'The animation is drawn from the platform’s geometry, with the ball and controller simulated.'
+      'The animation is simulated.'
     ],
     links: [{ label: 'Code on GitHub', url: 'https://github.com/Redstone-ray/3YDP' }],
     cover: { type: 'video', src: 'assets/media/balancer/stewart.mp4', poster: 'assets/media/balancer/stewart-poster.webp', tone: 'light', bg: '#f4f2ee', aspect: 1.333, alt: 'Animated drawing of a three-servo Stewart platform tilting its plate to roll a steel ball to a series of setpoints and around a circle, with a top view beside it' },
     gallery: [
       { type: 'image', src: 'assets/media/balancer/platform.webp', alt: 'The finished platform: a black plate on three dark linkages driven by servos on a clear acrylic base, lit blue from behind', caption: 'The finished platform.' },
       { type: 'image', src: 'assets/media/balancer/platform-cad.webp', alt: 'CAD of the redesigned platform: a topology-optimized plate over a load-cell plate, three linkages and three servos on a base plate', caption: 'The heavy-ball redesign, in CAD.' },
-      { type: 'image', src: 'assets/media/balancer/plate.webp', alt: 'A circular plate with organic, branching cut-outs from topology optimization', caption: 'A topology-optimized plate: stiff where it needs to be, light everywhere else.' },
-      { type: 'image', src: 'assets/media/balancer/spm-photo.webp', alt: 'A small spherical parallel manipulator with curved white links holding an egg on its platform', caption: 'A spherical parallel manipulator, built to replace the ball joints.' },
-      { type: 'image', src: 'assets/media/balancer/beam.webp', alt: 'CAD render of the beam balancer. A grey channel beam is tilted on a pivot post, with a ball resting in it and a hobby servo driving the beam through a two-bar linkage.', caption: 'An earlier beam balancer, in CAD.' }
+      { type: 'image', src: 'assets/media/balancer/plate.webp', alt: 'A circular plate with organic, branching cut-outs from topology optimization', caption: 'A topology-optimized plate.' },
+      { type: 'image', src: 'assets/media/balancer/spm-photo.webp', alt: 'A small spherical parallel manipulator with curved white links holding an egg on its platform', caption: 'A spherical parallel manipulator, without ball joints.' },
+      { type: 'image', src: 'assets/media/balancer/beam.webp', alt: 'CAD render of the beam balancer. A grey channel beam is tilted on a pivot post, with a ball resting in it and a hobby servo driving the beam through a two-bar linkage.', caption: 'The beam balancer, in CAD.' }
     ]
   },
   {
@@ -310,7 +307,7 @@ window.PROJECTS = [
     tags: ['Arduino', 'autonomy', 'sensors', '1st place'],
     body: [
       'A fully autonomous mini-sumo robot. Ultrasonic “eyes” find the opponent, IR sensors keep it off the edge of the ring, and an Arduino makes the calls in real time. It runs on a LiPo with an onboard voltmeter.',
-      'It took first place. You can try to survive it in the toys section below.'
+      'It took first place.'
     ],
     cover: { type: 'image', src: 'assets/media/sumo/robot.webp', tone: 'dark', scrim: 'strong', aspect: 1.33, alt: 'A small pink duct-taped robot with ultrasonic sensors and a voltage display' },
     gallery: []

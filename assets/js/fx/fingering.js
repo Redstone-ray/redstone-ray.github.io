@@ -31,20 +31,20 @@
     margin: 64,        // SOR box margin around a growing bloom (cells)
     sweeps: 6,         // red-black SOR sweeps per frame (per growing bloom)
     omega: 1.85,
-    eta: 1.8,          // growth ∝ flux^η (sharper tips → thinner fingers)
-    sigma: 0.07,       // surface tension (relative to the bloom's mean field)
-    sigGrow: 0.35,     // σ ∝ (R/R0)^sigGrow: capillary length grows as the front slows
+    eta: 1.6,          // growth ∝ flux^η (sharper tips → thinner fingers)
+    sigma: 0.2,        // surface tension (relative to the bloom's mean field)
+    sigGrow: 0.55,     // σ ∝ (R/R0)^sigGrow: capillary length grows as the front slows
     R0: 10,
-    diskR: 2.8,        // curvature estimator radius (cells)
+    diskR: 4.5,        // curvature estimator radius (cells)
     diagW: 0.35,       // weight of diagonal faces in the flux (cancels lattice bias)
     nine: 1,           // isotropic 9-point Laplacian
-    noise: 0.6,        // temporal noise on growth weights
-    thrJitter: 1.0,    // quenched, spatially correlated disorder in fill thresholds
-    modeAmp: 0.1,      // per-bloom angular bias → every bloom unique
-    kMin: 10, kMax: 14,
-    envA: 1.2, envQ: 0.8,  // keep petals of similar length (angular envelope)
+    noise: 0.2,        // temporal noise on growth weights
+    thrJitter: 0.5,    // quenched, spatially correlated disorder in fill thresholds
+    modeAmp: 0.3,      // per-bloom angular bias → every bloom unique
+    kMin: 10, kMax: 13,
+    envA: 4, envQ: 0.55,   // keep petals of similar length, radiating evenly (angular envelope)
     drainBand: 0,      // optional fade width at the retreating front (fraction of growth time)
-    fillRatio: 0.34,   // area / (π R²) of a typical bloom, to size targets (thin fingers: lots of gap)
+    fillRatio: 0.4,    // area / (π R²) of a typical bloom, to size targets (thin fingers: lots of gap)
     ringPeriod: 0.85,  // growth-ring period (s)
     glow: 0.06, halo: 0.12,
     // tone map (0 = deep vein … 0.6 = accent … 0.86 = tip … 1 = hot)

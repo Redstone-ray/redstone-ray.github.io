@@ -82,13 +82,16 @@ list and the meta description.
 
 ## Unpublished work: illustrations, not lab media
 
-The Harvard projects (viscous fingering and Liquafilm, Aizenberg Lab) and the Cornell
-plunger (Thorne Lab) are unpublished. Their pages show **no** lab photos, videos,
-renders or data. Everything there was made for this site instead: vector illustrations
-(`concept-*.svg`) and frames and video from the site's own fluid simulation
-(`blooms/sim-*`, made with `js/fx/fingering.js`, the same code as the hero). The
-captions and project text say so. Keep it that way until the work is published, and
-check with the lab before adding anything real.
+Liquafilm (Aizenberg Lab) and the Cornell plunger (Thorne Lab) are unpublished. Their
+pages show **no** lab photos, videos, renders or data, only vector illustrations made for
+this site (`concept-*.svg`). Keep it that way until the work is published, and check with
+the lab before adding anything real.
+
+The viscous-fingering page shows one real image: the Visions of the Wyss 2026 winner,
+already published by the Wyss Institute
+([post](https://wyss.harvard.edu/news/visions-of-the-wyss-2026/)), saved as
+`blooms/wyss-2026.webp` and credited in its caption. The hero's fluid flowers are the
+simulation in `js/fx/fingering.js`.
 
 The ball-joint page uses Musashi Americas' own Suspension Sense™ figures from their
 [announcement](https://musashiamericas.com/2026/01/12/introducing-suspension-sense-technology/),
