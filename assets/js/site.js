@@ -1439,7 +1439,7 @@
     mountFX('scent', doc.getElementById('scent-lcd'));
     const portrait = doc.getElementById('portrait');
     if (portrait) mountFX('thermal', portrait, { src: portrait.getAttribute('data-src'), alt: portrait.getAttribute('data-alt') });
-    mountFX('goose', doc.body, { autoDelayMs: 40000 });
+    mountFX('goose', doc.body, { autoDelayMs: 12000 });
   }
 
   /* ======================================================================

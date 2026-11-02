@@ -829,23 +829,6 @@
         ctx.globalAlpha = PR.glow;
         ctx.drawImage(glow, ox, ox, gw, gh);
         ctx.globalCompositeOperation = 'source-over'; ctx.globalAlpha = 1;
-        // injection ports: a dark drilled hole with a lit rim (tinted by the scent)
-        const tp = pal.tip, lip = 'rgba(' + (tp[0] | 0) + ',' + (tp[1] | 0) + ',' + (tp[2] | 0) + ',';
-        for (let s = 1; s <= SLOTS; s++) {
-          const b = slots[s]; if (!b) continue;
-          let a = b.alpha; if (b.draining) a *= Math.max(0, 1 - (simT - b.drainT0) / (DRAIN * 0.8));
-          if (a <= 0.01) continue;
-          const x = (b.sx - M + 0.5) * sc, y = (b.sy - M + 0.5) * sc, r = Math.max(5, cell * 2.2) * dpr;
-          const g = ctx.createRadialGradient(x, y, 0, x, y, r * 1.6);
-          g.addColorStop(0, 'rgba(8,4,2,' + 0.97 * a + ')');
-          g.addColorStop(0.5, 'rgba(14,6,2,' + 0.96 * a + ')');
-          g.addColorStop(0.6, 'rgba(44,20,5,' + 0.92 * a + ')');
-          g.addColorStop(0.69, lip + 0.62 * a + ')');
-          g.addColorStop(0.8, lip + 0.2 * a + ')');
-          g.addColorStop(1, lip + '0)');
-          ctx.fillStyle = g;
-          ctx.beginPath(); ctx.arc(x, y, r * 1.6, 0, 6.2832); ctx.fill();
-        }
       }
       const t2 = performance.now();
       stats.render = t1 - t0; stats.compose = t2 - t1;
