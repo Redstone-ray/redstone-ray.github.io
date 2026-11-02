@@ -112,7 +112,7 @@ window.PROJECTS = [
   {
     slug: 'blooms',
     title: 'Viscous fingering',
-    caption: 'Fluid flowers between two sheets of glass',
+    caption: 'A method of growing liquid flowers',
     year: '2026',
     where: 'Aizenberg Lab, Harvard SEAS',
     role: 'Experiments and imaging',
