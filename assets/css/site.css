@@ -1007,6 +1007,8 @@ html:not(.js) .toy__ph::after { content: "needs JavaScript"; font-size: 12px; }
 /* ==========================================================================
    CV
    ========================================================================== */
+.cv__full { margin: -8px 0 48px; }
+.cv-btn { padding: 10px 18px; }
 .cv__group {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
