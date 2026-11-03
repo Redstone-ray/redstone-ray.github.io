@@ -138,9 +138,7 @@ window.PROJECTS = [
     role: 'Hardware co-lead: mechanical design, controls, installation',
     tags: ['smart windows', 'building energy', 'fluidics', 'Arduino / ESP32', 'CAD'],
     body: [
-      'Liquafilm is a retrofittable, fluid-filled window screen. Thin cavities fill with a water-based fluid to dim, blur or filter sunlight, drain to go clear, and hold either state with no standby power.',
-      'As project co-lead with Raphael Kay, I led the hardware: I designed the second prototype’s glass, frame and brackets, wrote the pump controller with timed, light, temperature and setpoint modes, and took the device from the bench to a full-size window in a real building.',
-      'Unpublished, so these are illustrations.'
+      'Liquafilm is a retrofittable, fluid-filled window screen. Thin cavities fill with a water-based fluid to dim, blur or filter sunlight, drain to go clear, and hold either state with no standby power.'
     ],
     links: [
       { label: 'Harvard SEAS feature', url: 'https://seas.harvard.edu/news/window-heating-and-cooling' }
