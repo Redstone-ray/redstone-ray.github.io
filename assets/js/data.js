@@ -267,13 +267,14 @@ window.PROJECTS = [
     tags: ['ESP32', 'PCB design', 'IoT', 'peristaltic pumps'],
     body: [
       'Inspired by the scent effects on theme-park rides. Aroma has swappable essential-oil reservoirs, peristaltic pumps to dose them and an ultrasonic atomizer.',
-      'A custom ESP32 board runs the pumps, water-level sensing, an LCD, Bluetooth and a web scheduler, and the firmware changes scent to fit whatever music is playing.'
+      'A custom ESP32 board runs the pumps, water-level sensing, an LCD, Bluetooth and a web scheduler, and the firmware changes scent to fit whatever music is playing.',
+      'The animation is a render.'
     ],
     links: [{ label: 'Code on GitHub', url: 'https://github.com/Redstone-ray/Aroma' }],
-    cover: { type: 'image', src: 'assets/media/aroma/lcd.webp', fit: 'contain', tone: 'dark', bg: '#0b0b0b', aspect: 1.12, alt: 'Custom circuit board with an LCD reading Aroma, scent lavender, water low' },
+    cover: { type: 'video', src: 'assets/media/aroma/running.mp4', poster: 'assets/media/aroma/running-poster.webp', tone: 'dark', scrim: 'strong', bg: '#cdcbc8', aspect: 1.333, alt: 'Render of Aroma running: a slug of lavender oil, then orange, climbs out of its glass vial through a thin tube and over the cork to the pumps, while mist rises from the brass chimney on the mixing tank' },
     gallery: [
       { type: 'image', src: 'assets/media/aroma/lcd.webp', alt: 'Custom circuit board with an LCD reading Aroma, scent lavender, water low', caption: 'The board.' },
-      { type: 'image', src: 'assets/media/aroma/render.webp', alt: 'Render of the diffuser with a bank of oil reservoirs', caption: 'The reservoir bank.' }
+      { type: 'image', src: 'assets/media/aroma/studio.webp', alt: 'Render of Aroma: four glass vials of essential oil in an aluminium rack, a frosted mixing tank with a walnut lid and brass chimney, and a water bottle, on a white base with a walnut deck, an LCD and a knob', caption: 'The full assembly.' }
     ]
   },
   {
