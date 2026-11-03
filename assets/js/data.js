@@ -124,7 +124,7 @@ window.PROJECTS = [
     links: [
       { label: 'Visions of the Wyss 2026', url: 'https://wyss.harvard.edu/news/visions-of-the-wyss-2026/' }
     ],
-    cover: { type: 'image', src: 'assets/media/blooms/wyss-2026.webp', tone: 'dark', bg: '#050403', scrim: 'strong', lead: false, aspect: 1.463, alt: 'Four rows of amber fluid blooms on black, each row one injection growing from left to right' },
+    cover: { type: 'video', src: 'assets/media/blooms/flower.mp4', poster: 'assets/media/blooms/flower-poster.webp', tone: 'dark', scrim: 'strong', aspect: 1, alt: 'Air pushed into molasses between two plates, growing from a single port into a flower of splitting fingers' },
     gallery: [
       { type: 'image', src: 'assets/media/blooms/wyss-2026.webp', alt: 'Four rows of amber fluid blooms on black, each row one injection growing from left to right, some petalled, some ringed, some fringed', caption: 'Visions of the Wyss 2026, Look into the Lab winner. With Raphael Kay and Rafiq Omair.', wide: true }
     ]
@@ -211,7 +211,7 @@ window.PROJECTS = [
       'Lymphedema, a swelling of the arm or leg, is treated with rhythmic compression. This wearable squeezes the arm in waves with soft compression bands, so the therapy can happen at home instead of strapped to a machine.',
       'I integrated flexible printed sensors that track the limb’s volume and the pressure on it, and wrote the embedded closed-loop pressure control (PID) and its web control panel.'
     ],
-    cover: { type: 'image', src: 'assets/media/sleeve/sleeve-full.webp', tone: 'dark', scrim: 'strong', aspect: 0.8, alt: 'A white mannequin wearing the compression sleeve from shoulder to glove, with clear tubes running down to a black motor pack on the belt' },
+    cover: { type: 'video', src: 'assets/media/sleeve/sleeve-loop.mp4', poster: 'assets/media/sleeve/sleeve-loop-poster.webp', tone: 'dark', scrim: 'strong', aspect: 0.8, alt: 'A white mannequin wearing the compression sleeve from shoulder to glove, with clear tubes running down to a black motor pack on the belt' },
     gallery: [
       { type: 'image', src: 'assets/media/sleeve/sleeve-full.webp', alt: 'A white mannequin wearing the compression sleeve. Fabric bands sit on the upper arm and forearm, there is a cable cuff at the wrist, and clear tubes run down the chest to a black two-spool motor pack on the belt.', caption: 'On a mannequin.' },
       { type: 'video', src: 'assets/media/sleeve/sleeve-loop.mp4', poster: 'assets/media/sleeve/sleeve-loop-poster.webp', alt: 'A white mannequin arm wearing the compression sleeve. Two fabric bands on the forearm tighten and release as the drive cables pull, and the clear tubes run down to the motor pack at the waist.', caption: 'The bands tightening and letting go.' },
@@ -280,8 +280,8 @@ window.PROJECTS = [
   },
   {
     slug: 'ball-balancer',
-    title: 'Ball-balancing Stewart platform',
-    caption: 'Machines that tilt to keep a ball exactly where you tell it to',
+    title: 'Stewart Platform',
+    caption: 'The tilting ball machine',
     year: '2025',
     where: 'University of Waterloo, MTE 380 (team of five)',
     role: 'Controls and modelling',
