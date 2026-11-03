@@ -209,12 +209,13 @@ window.PROJECTS = [
       'Lymphedema, a swelling of the arm or leg, is treated with rhythmic compression. This wearable squeezes the arm in waves with soft compression bands, so the therapy can happen at home instead of strapped to a machine.',
       'I integrated flexible printed sensors that track the limb’s volume and the pressure on it, and wrote the embedded closed-loop pressure control (PID) and its web control panel.'
     ],
+    links: [
+      { label: 'Thesis abstract (UWSpace)', url: 'https://uwspace.uwaterloo.ca/items/d107b5b4-d82c-41d2-bde6-e74b09c0f955' }
+    ],
     cover: { type: 'video', src: 'assets/media/sleeve/sleeve-loop.mp4', poster: 'assets/media/sleeve/sleeve-loop-poster.webp', tone: 'dark', scrim: 'strong', aspect: 0.8, alt: 'A white mannequin wearing the compression sleeve from shoulder to glove, with clear tubes running down to a black motor pack on the belt' },
     gallery: [
       { type: 'image', src: 'assets/media/sleeve/sleeve-full.webp', alt: 'A white mannequin wearing the compression sleeve. Fabric bands sit on the upper arm and forearm, there is a cable cuff at the wrist, and clear tubes run down the chest to a black two-spool motor pack on the belt.', caption: 'On a mannequin.' },
-      { type: 'video', src: 'assets/media/sleeve/sleeve-loop.mp4', poster: 'assets/media/sleeve/sleeve-loop-poster.webp', alt: 'A white mannequin arm wearing the compression sleeve. Two fabric bands on the forearm tighten and release as the drive cables pull, and the clear tubes run down to the motor pack at the waist.', caption: 'The bands tightening and letting go.' },
-      { type: 'image', src: 'assets/media/sleeve/sleeve-bands.webp', alt: 'Close-up of two sleeve bands on a mannequin arm. Each has a braided cable channel, a black V-shaped hanger and a clip, with one taut line running between the bands.', caption: 'The bands.' },
-      { type: 'image', src: 'assets/media/sleeve/sleeve-drive.webp', alt: 'A black 3D-printed drive pack on a belt. It holds two grey cable spools and two small DC gear motors, with clear tubes entering from the top and coloured wires leaving at the right.', caption: 'The drive pack.' }
+      { type: 'video', src: 'assets/media/sleeve/sleeve-loop.mp4', poster: 'assets/media/sleeve/sleeve-loop-poster.webp', alt: 'A white mannequin arm wearing the compression sleeve. Two fabric bands on the forearm tighten and release as the drive cables pull, and the clear tubes run down to the motor pack at the waist.', caption: 'The bands tightening and letting go.' }
     ]
   },
   {
