@@ -180,12 +180,16 @@ window.PROJECTS = [
     role: 'Controls Lead',
     tags: ['controls', 'state estimation', 'STM32 / FreeRTOS', 'Ansys CFD', 'machining'],
     body: [
-      'I led the controls subsystem (30+ students) on Waterloo Rocketry’s liquid-fuelled competition rockets. My first year I worked on almost every part of a solid-motor demo rocket that we built in seven weeks to prove out parachute recovery.',
+      'I led the controls subsystem (30+ students) on Waterloo Rocketry’s liquid-fuelled rockets, starting with Borealis: Canada’s first liquid bi-propellant rocket, which flew on ethanol and nitrous oxide to 19,212 ft at Launch Canada 2024 and took first place in the Advanced category. My first year I worked on almost every part of a solid-motor demo rocket that we built in seven weeks to prove out parachute recovery.',
       'The canards are small fins the flight computer steers to stop the rocket rolling. I worked on the mechanism, the controller and state estimator (LQR with a Kalman filter), the STM32/FreeRTOS flight firmware, 6-DoF MATLAB/Simulink sims and a PyAnsys CFD pipeline for the aerodynamics.',
-      'The airbrakes are drag flaps that open mid-flight under closed-loop control so the rocket tops out at a target altitude. I presented them as a podium talk at Launch Canada 2024.'
+      'Borealis flew airbrakes: three panels that one servo drives out together through a spiral cam plate, steered to a target apogee by a Madgwick-filter state estimate and an RK4 apogee prediction, with drag from Ansys CFD. I presented them as a podium talk at Launch Canada 2024.'
+    ],
+    links: [
+      { label: 'Borealis', url: 'https://www.waterloorocketry.com/rockets/borealis' }
     ],
     cover: { type: 'video', src: 'assets/media/canards/bench.mp4', poster: 'assets/media/canards/bench-poster.webp', tone: 'dark', aspect: 1.78, alt: 'The canard module tilting on the bench while its fins respond' },
     gallery: [
+      { type: 'image', src: 'assets/media/canards/borealis.webp', alt: 'Render of Borealis lying horizontal: a white and silver airframe with a green and pink nose cone and blue fins', caption: 'Borealis. Image: Waterloo Rocketry.', wide: true },
       { type: 'image', src: 'assets/media/canards/parts.webp', alt: 'Canard fin, bearing block, bearings, shaft and bevel gear laid out on a grey bench', caption: 'Canard parts, before assembly.', wide: true },
       { type: 'image', src: 'assets/media/canards/bearing.webp', alt: 'A machined aluminium bearing block holding a large thin-section ball bearing', caption: 'A machined bearing block.' },
       { type: 'image', src: 'assets/media/canards/mechanism.webp', alt: 'Top view of the canard plate with the fin shafts, bearing blocks and servo assembled', caption: 'The actuation mechanism on its plate.' },
@@ -281,15 +285,18 @@ window.PROJECTS = [
     year: '2025',
     where: 'University of Waterloo, MTE 380 (team of five)',
     role: 'Controls and modelling',
-    tags: ['PID', 'load-cell sensing', 'parallel mechanisms', 'Simulink', 'computer vision'],
+    tags: ['PID', 'force-torque sensing', 'parallel mechanisms', 'Simulink', 'computer vision'],
     body: [
-      'A 3-DoF Stewart platform: three servos tilt a plate to keep a ball where you ask. The usual setup tracks a ping-pong ball with a camera. We wanted to feel the ball instead, so we put a three-axis load cell under the plate and worked out where the ball is from the tipping moment it makes.',
-      'That needed a 2-inch steel ball, about 100 times heavier, so we redesigned the platform around it: stronger servos, new linkages and a lighter, topology-optimized plate. Decoupled x and y PID loops keep it balanced, and a Simulink study compared step commands with fixed and replanned trajectories. We also built a spherical parallel manipulator to show the ball joints could go.',
+      'A team project: a 3-DoF Stewart platform, where three servos tilt a plate to keep a ball where you ask. The course version tracks a 2.7 g ping-pong ball with a camera. We found the ball by feel instead: a three-axis force-torque sensor under the plate reads the tipping moments the ball makes.',
+      'That took a 538 g steel ball, 200 times heavier, and the platform was rebuilt around it: a topology-optimized plate 14% lighter and 12% stiffer than a standard cutout design, wider links, and a protection circuit for servos the falling ball could back-drive. Decoupled x and y PID loops keep it balanced, and a Simulink study compared trajectory planners. We also built a spherical parallel manipulator with pin joints only, to show the ball joints could go.',
       'The animation is simulated.'
     ],
-    links: [{ label: 'Code on GitHub', url: 'https://github.com/Redstone-ray/3YDP' }],
+    links: [
+      { label: 'Code on GitHub', url: 'https://github.com/Redstone-ray/3YDP' }
+    ],
     cover: { type: 'video', src: 'assets/media/balancer/stewart.mp4', poster: 'assets/media/balancer/stewart-poster.webp', tone: 'light', bg: '#f4f2ee', aspect: 1.333, alt: 'Animated drawing of a three-servo Stewart platform tilting its plate to roll a steel ball to a series of setpoints and around a circle, with a top view beside it' },
     gallery: [
+      { type: 'video', src: 'assets/media/balancer/demo.mp4', poster: 'assets/media/balancer/demo-poster.webp', alt: 'The finished platform holding a ball on its plate in a dark room, its LED ring turning green once the ball is balanced', caption: 'Balanced: the ring turns green.', wide: true },
       { type: 'image', src: 'assets/media/balancer/platform.webp', alt: 'The finished platform: a black plate on three dark linkages driven by servos on a clear acrylic base, lit blue from behind', caption: 'The finished platform.' },
       { type: 'image', src: 'assets/media/balancer/platform-cad.webp', alt: 'CAD of the redesigned platform: a topology-optimized plate over a load-cell plate, three linkages and three servos on a base plate', caption: 'The heavy-ball redesign, in CAD.' },
       { type: 'image', src: 'assets/media/balancer/plate.webp', alt: 'A circular plate with organic, branching cut-outs from topology optimization', caption: 'A topology-optimized plate.' },
